@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.914Z
+---
+
+# List connection instance scheduled actions
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 2f5bdbad-2cd9-4b33-8f05-68d555299206
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/api-configuration/{id}"
+    attrs:
+      uid: 073ce1ba-2ec7-4d57-b5e6-27abbd9297ac
+attrs:
+  uid: 268329c4-5e1b-4fd5-bfd3-44a95f473e67
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: ac30cdb5-f315-40a4-80a2-c94170e7bbd6
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: b2b254de-e391-4fe0-b4fe-1e3d84d03bd7
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: fd694504-5a57-4f45-b245-a25a409a1206
+        row:
+          - id
+          - —
+attrs:
+  uid: 98a21607-e24e-4ba6-8cef-26f75b05f32c
+---
+```
+

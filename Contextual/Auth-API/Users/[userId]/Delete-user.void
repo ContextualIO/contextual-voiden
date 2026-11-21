@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.327Z
+---
+
+# Delete user
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: a9b307df-854b-4a9b-8019-f032aedcb3e7
+    content: DELETE
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/users/{userId}"
+    attrs:
+      uid: fde591b1-0dad-4a44-86f5-270ed07a33c9
+attrs:
+  uid: 059482af-3903-4ecf-8719-36d789058a95
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: efe9cc62-65a8-4b4a-971f-5d2711bed759
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: 9707c33f-56fa-44af-a776-696624d13f1d
+        row:
+          - userId
+          - —
+attrs:
+  uid: db9fb18a-d6d1-4e26-a9f5-b595b4d8cd69
+---
+```
+

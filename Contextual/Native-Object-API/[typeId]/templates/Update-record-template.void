@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.587Z
+---
+
+# Update record template
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PUT
+      uid: bd057a23-7112-4ad2-af54-87a0d36cfaa4
+    content: PUT
+  - type: url
+    content: "{{noUrl}}/$templates/{typeId}/{id}"
+    attrs:
+      uid: db045971-d7ce-4243-8447-51307b7f964f
+attrs:
+  uid: 2e4af746-b310-41be-bb54-fb36d363871c
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: a33cbd4f-6640-492d-af29-1a59eb97701c
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 1d630806-6c6e-4cc6-a22a-ddb96ac6a99b
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: a4db413d-93df-4afc-8904-e3009cf30ac1
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: 5772fa65-f841-43c6-83fa-6476123346dd
+        row:
+          - id
+          - —
+attrs:
+  uid: 418547b8-6243-4173-b75e-b7fe8b3c42d7
+---
+```
+

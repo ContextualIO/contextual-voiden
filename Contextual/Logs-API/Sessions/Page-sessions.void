@@ -1,0 +1,27 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:15.280Z
+---
+
+# Page sessions
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: 2f0c03a8-4d57-4554-9ba9-9d7ce7884d2f
+    content: POST
+  - type: url
+    content: "{{logsUrl}}/$page/sessions"
+    attrs:
+      uid: 9a41424b-2f06-4db4-a833-29a9719eed50
+attrs:
+  uid: 35a12b93-7853-4497-9094-d151867a7d81
+---
+```
+

@@ -1,0 +1,73 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.346Z
+---
+
+# Get flow scheduled action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 6abd55b0-a375-483a-bf2e-0a921248ea41
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/flow/{id}/{actionId}/{scheduledActionId}"
+    attrs:
+      uid: 7c2497d9-5980-4528-8276-23634464afd9
+attrs:
+  uid: 87499ca9-1e94-49f3-be60-009858a2fd97
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 94879740-1239-4d53-8cea-aca81e29b3e0
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: aae0753e-f7d7-48bb-a4d5-cff3cfbbfa94
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 51da0b29-3e7a-4a64-8064-479cfec8e008
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: 611e0ec7-e4c1-4452-973a-c48bbce44552
+        row:
+          - actionId
+          - —
+      - attrs:
+          disabled: false
+          uid: 74db4a5f-edd9-4b37-93e0-74b56dd13bf8
+        row:
+          - scheduledActionId
+          - —
+attrs:
+  uid: afa20c63-a494-4d3a-8186-0a50a1f04481
+---
+```
+

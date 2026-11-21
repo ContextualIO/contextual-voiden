@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.796Z
+---
+
+# List specific agent audit trail
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: ab8d6b43-08a6-464e-8765-040dc71255e2
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$audit-trail/agent/{id}"
+    attrs:
+      uid: 1b4b3de9-34a7-4183-884f-32cdefe8eeee
+attrs:
+  uid: d3dabbe2-dbc9-485f-83e0-b8e9144fe93e
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: b3c2c9ac-f14e-46b0-a80d-ddc52ff90ee7
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: ce9d9383-5f63-429d-8a88-6a63486a9d2b
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: cebf3f5d-4717-4270-ab02-e7ad423882a1
+        row:
+          - id
+          - —
+attrs:
+  uid: 0971794c-15a6-4fbe-b8aa-cb8d1e720214
+---
+```
+

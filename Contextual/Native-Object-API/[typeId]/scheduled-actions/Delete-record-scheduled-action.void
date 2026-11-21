@@ -1,0 +1,79 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.804Z
+---
+
+# Delete record scheduled action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 5ee13a7d-78f3-48f2-86f6-5779dcc1ceea
+    content: DELETE
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/{typeId}/{id}/{actionId}/{scheduledActionId}"
+    attrs:
+      uid: c7a5f4d5-2ea0-4c35-b6df-a51bd08b9dc5
+attrs:
+  uid: 26fed184-7543-4565-98cf-d23ff45fcbf2
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 35a1f83e-12aa-4a38-8db0-5ff9900c33d6
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 0d9fe481-1eb3-424c-a2c8-5da5c44bf2bc
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 6a1a938a-e14b-4a1f-80c9-095a716210a9
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: da97da5a-f0a4-47e9-96d7-458af25d77b7
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: 893bc23a-6903-4583-a297-41b3efc90759
+        row:
+          - actionId
+          - —
+      - attrs:
+          disabled: false
+          uid: 65293a11-f509-4eb2-82a8-41e4eaa221f6
+        row:
+          - scheduledActionId
+          - —
+attrs:
+  uid: c4f9e123-4faf-4978-921d-d29bff228983
+---
+```
+

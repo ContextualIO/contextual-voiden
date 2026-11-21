@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.004Z
+---
+
+# Delete role
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 894fb71a-cc5f-41bf-af56-4d791d1e1e5e
+    content: DELETE
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/roles/{roleId}"
+    attrs:
+      uid: 6344af41-207a-4522-95b9-ffafb2809cfd
+attrs:
+  uid: a508239f-d191-48f8-97b7-a5e790d67f96
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 440c173d-16b0-4a4a-93e0-28f03cd522d6
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: 0d2b0e9a-9145-46c0-92a5-2f07e8993fe7
+        row:
+          - roleId
+          - —
+attrs:
+  uid: f485c6bc-359e-453d-a2e0-88162b8835be
+---
+```
+

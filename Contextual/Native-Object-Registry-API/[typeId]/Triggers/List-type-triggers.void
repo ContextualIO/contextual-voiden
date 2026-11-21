@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:13.498Z
+---
+
+# List type triggers
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: bfd4cf4c-8a94-47c9-b56a-f372d7ed2257
+    content: GET
+  - type: url
+    content: "{{noRegistryUrl}}/types/{typeId}/triggers"
+    attrs:
+      uid: 6c4010a1-0f26-46a7-9322-486199cfa209
+attrs:
+  uid: cd841a12-0f9d-4273-92ab-ed92a38db12e
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 2676e63f-8def-46dd-bbe4-3433a2158384
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: da40f9bf-8af9-474c-942d-946193b11aab
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: f7665dc3-7d9a-426b-a111-a656d8a53707
+        row:
+          - typeId
+          - —
+attrs:
+  uid: 35c3f108-b15e-48b9-ac06-41d2a80e324a
+---
+```
+

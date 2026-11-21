@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.912Z
+---
+
+# List agent templates
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 0caf825d-50e4-482f-a288-59e3b1196237
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$templates/agent"
+    attrs:
+      uid: 93c3cd7c-e5d7-48e5-b603-3813ad54ae84
+attrs:
+  uid: c46580f3-e585-4b5e-964b-e5f432a1608a
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 83f8fbe0-4ec2-4424-bfec-26e72fe38354
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 8b99f963-88a2-4913-86fd-336b1108bbd1
+---
+```
+

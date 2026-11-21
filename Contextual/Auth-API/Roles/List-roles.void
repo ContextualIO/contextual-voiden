@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.049Z
+---
+
+# List roles
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: ad8d6cf5-9899-444d-b522-2f1a858792cb
+    content: GET
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/roles"
+    attrs:
+      uid: 6ba85835-92fe-4cbc-833f-3835245ad45b
+attrs:
+  uid: cd611f15-7911-4f5b-a554-9837368fbfd8
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: bad65142-9b90-4dc4-9fdf-3626bfabc1ce
+        row:
+          - organizationId
+          - —
+attrs:
+  uid: 791645ca-374a-4d99-aa43-1123116d5e6d
+---
+```
+

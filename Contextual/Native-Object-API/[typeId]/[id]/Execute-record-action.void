@@ -1,0 +1,73 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.313Z
+---
+
+# Execute record action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PATCH
+      uid: 8a79250b-c3a6-46c9-8f42-5d3402119e1d
+    content: PATCH
+  - type: url
+    content: "{{noUrl}}/{typeId}/{id}/actions/{actionId}"
+    attrs:
+      uid: 879f1c41-ab10-407f-8399-e6e8f6331b87
+attrs:
+  uid: 074d8b1d-b0ad-4ee7-917e-a828185c5f9b
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 05e5d7fa-2416-455d-9ebf-fefc10deef42
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 7b26dd60-63d7-4786-a064-c251d4b3c08a
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: facddce1-c5da-4ee0-a6e3-49ea2bd66fc9
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: f03b58c1-7b73-4050-a61e-3caf583e14c6
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: cba0798e-fbf4-4b68-b13c-ddaeae0d14a2
+        row:
+          - actionId
+          - —
+attrs:
+  uid: 53f29009-9bfa-4789-aa50-b55937dfdcb9
+---
+```
+

@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.440Z
+---
+
+# Get current user permissions
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 827e773d-f1b1-40bd-b6fa-58324dba36d1
+    content: GET
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/me/permissions"
+    attrs:
+      uid: 2b17f66b-f0ee-4740-b685-c72fe095b742
+attrs:
+  uid: 60f57181-1d3a-4a96-b5df-379ebf450b94
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 989eb7e9-46b5-4a64-8d6c-ec2c890934c0
+        row:
+          - organizationId
+          - —
+attrs:
+  uid: f26d3ab0-ea10-433c-a4e2-fa70c3326839
+---
+```
+

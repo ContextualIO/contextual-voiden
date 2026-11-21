@@ -1,0 +1,73 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.370Z
+---
+
+# Update flow scheduled action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PUT
+      uid: 983d205c-f2e8-4ef2-8ace-2e7f4da419b7
+    content: PUT
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/flow/{id}/{actionId}/{scheduledActionId}"
+    attrs:
+      uid: 0fe98618-a62f-4d0d-aeaf-6df9ea902e4e
+attrs:
+  uid: 395caa0e-b124-4bd2-97ea-658d4f3d2529
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 18fce555-09d1-403f-9f30-bd45d7d69f02
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 248035d5-b2b6-4303-9e25-c2bc55c084e6
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: ff047bbf-17aa-4e72-b3e1-d2cf0a7600d7
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: d0b62035-7c0f-4554-8024-9a2952a5e3b3
+        row:
+          - actionId
+          - —
+      - attrs:
+          disabled: false
+          uid: d2f4cf55-a456-40a7-b45d-85570ebfac3d
+        row:
+          - scheduledActionId
+          - —
+attrs:
+  uid: d9292ecc-fdcd-4cfb-81c0-dd1482cf9373
+---
+```
+

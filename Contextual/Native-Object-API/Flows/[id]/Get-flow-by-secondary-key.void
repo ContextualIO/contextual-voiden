@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:09.777Z
+---
+
+# Get flow by secondary key
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 0394f843-46e6-47cb-bc9a-0232734fff14
+    content: GET
+  - type: url
+    content: "{{noUrl}}/flow/{key}/{value}"
+    attrs:
+      uid: 3469a020-2d9c-4858-936f-ea9696c73a95
+attrs:
+  uid: 4ebfb350-53b0-4a14-b9f4-5f5b7ab1ee95
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 40ad41b4-c7dd-41e3-ae7d-d411a423e742
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 561c205d-2a05-435c-9721-f6ac6de26d7b
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: ccb2ba6c-98fb-48dd-bb31-ae33d60b387d
+        row:
+          - key
+          - —
+      - attrs:
+          disabled: false
+          uid: 4afaf7e6-4236-423a-b67c-336aab5fa9f4
+        row:
+          - value
+          - —
+attrs:
+  uid: 20d127fb-ed36-462b-a997-b9b413e8f02f
+---
+```
+

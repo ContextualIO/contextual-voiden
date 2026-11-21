@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.403Z
+---
+
+# List specific record audit trail
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: ed8b0e31-5e75-4e67-8d7c-30860b43777c
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$audit-trail/{typeId}/{id}"
+    attrs:
+      uid: c1ab9675-62f5-42f2-8d77-8e1fba1c65de
+attrs:
+  uid: cd81413d-6c72-40ed-bcd7-91848079c5f1
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 9a2a7926-0618-43d0-b3e2-4f7e509bf009
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: b1dd033c-c291-4a5a-be36-5f61854beacb
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 187e65ce-ecbc-4cb1-aaf7-79ac27e7bc77
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: b26697d8-eb53-43d0-a68b-8b12516975d7
+        row:
+          - id
+          - —
+attrs:
+  uid: 2d436112-b7cd-4280-aedf-a6fd78ed3c33
+---
+```
+

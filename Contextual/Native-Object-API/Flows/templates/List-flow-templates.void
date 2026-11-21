@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.085Z
+---
+
+# List flow templates
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: e7d56490-73b9-428a-803a-a5e9c02ca50a
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$templates/flow"
+    attrs:
+      uid: 7bee1e64-aee0-4e24-826e-3e640c1152f4
+attrs:
+  uid: 42c9dffe-fdae-4cb7-9eac-3aae27b853f4
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 8687fe4a-a237-4103-b931-6a04484763cf
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 773044e4-27c6-474c-8095-e8ecdf889933
+---
+```
+

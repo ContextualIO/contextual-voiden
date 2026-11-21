@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.964Z
+---
+
+# Delete resource server
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 47d4a0d6-a544-4ec6-a1a1-bd5b045ab64c
+    content: DELETE
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/resource-servers/{resourceId}"
+    attrs:
+      uid: 3eb9daf5-394a-493b-9546-e8dc79799986
+attrs:
+  uid: 017ef235-1463-45c7-bafb-9926033a634e
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: d437562d-d917-4725-9307-cb6d0a18b364
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: 4116f920-836a-4ab8-914d-2ff71b0362fb
+        row:
+          - resourceId
+          - —
+attrs:
+  uid: af603eba-0c59-4235-8a7e-1ffcb8e705e1
+---
+```
+

@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.450Z
+---
+
+# List all records versions
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 2fdcc5d7-43e6-4ecd-ac72-4c2cb6d9c02c
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$versions/{typeId}"
+    attrs:
+      uid: 17f5c6e3-ce72-40fd-b7c1-e916c9e7ac77
+attrs:
+  uid: a3ae5aa3-5ec2-4e4a-ad9a-0817995f262f
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 101d9c8f-dcb6-45f0-8d7e-ad7c8501f77a
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 8b5ca1d8-6bc8-413c-ab23-697dd34b2a5e
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 1e240aa7-30ca-4bb2-974b-b39e55aa5557
+        row:
+          - typeId
+          - —
+attrs:
+  uid: eb08a392-d16d-4d3d-9c91-40c0a07659eb
+---
+```
+

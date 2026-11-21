@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:09.897Z
+---
+
+# Delete flow
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 4a8927cc-9494-4bd8-af7a-cba982f7699a
+    content: DELETE
+  - type: url
+    content: "{{noUrl}}/flow/{id}"
+    attrs:
+      uid: 69d159d1-d05a-48ea-84b5-6ca3a19aad36
+attrs:
+  uid: 1ac19629-b6ca-4360-b1ff-0ae337598c8e
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 19e89040-29b1-42c9-a58a-2f8eb2147a5b
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: d615b2a2-32d3-4df0-8ae4-c2a5756ad9fb
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 622af8f3-cad6-498e-b9d3-3349b07e7573
+        row:
+          - id
+          - —
+attrs:
+  uid: 8b52e46d-2149-4b01-947d-cd52d418a864
+---
+```
+

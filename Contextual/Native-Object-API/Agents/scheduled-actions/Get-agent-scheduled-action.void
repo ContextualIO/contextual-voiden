@@ -1,0 +1,73 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.148Z
+---
+
+# Get agent scheduled action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 93a4846f-43eb-4b53-8dc1-1eeb15c17393
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/agent/{id}/{actionId}/{scheduledActionId}"
+    attrs:
+      uid: 3b271d0d-94ed-4f5b-932a-81eed0f86528
+attrs:
+  uid: 17e3a9bb-6cfd-4803-b769-4b52d339e399
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 786ad759-4db9-4a81-98da-8ed42184081d
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 55c3d781-a1b9-4e3d-b04f-4f18d2e04bde
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: b3d085b0-e6b8-416d-82da-ac733926f895
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: 6d6bf87a-ce06-4397-9921-16002a3ca1e0
+        row:
+          - actionId
+          - —
+      - attrs:
+          disabled: false
+          uid: 156378a1-f0ef-4735-97db-de08d14ed6a1
+        row:
+          - scheduledActionId
+          - —
+attrs:
+  uid: f269cfeb-59a9-4a01-923a-5452bb97ef1f
+---
+```
+

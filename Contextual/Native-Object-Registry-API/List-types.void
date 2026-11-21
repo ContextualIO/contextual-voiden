@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:13.749Z
+---
+
+# List types
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 33a4f709-1ae0-43e6-8799-33acf114a5c8
+    content: GET
+  - type: url
+    content: "{{noRegistryUrl}}/types"
+    attrs:
+      uid: 495b852e-f1af-46aa-a880-ec0491627d48
+attrs:
+  uid: d198d806-fb15-4284-85ad-3275b7080c5f
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 82c8969a-49bc-4992-9589-7df56128f804
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: b988c242-d6ba-4ad9-bf06-1372d620e693
+---
+```
+

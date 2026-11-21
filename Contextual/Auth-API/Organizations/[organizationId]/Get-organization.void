@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:13.821Z
+---
+
+# Get organization
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 8d01c640-19bd-4381-a4e7-ee45ea5a77d2
+    content: GET
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}"
+    attrs:
+      uid: b5087665-ef65-40e9-98fc-59022880b1df
+attrs:
+  uid: e1eeb443-1ee7-495b-a0f2-4711b3a65579
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 92ce7198-2946-43dc-990a-f600a2eaf220
+        row:
+          - organizationId
+          - —
+attrs:
+  uid: 73ce3f02-3ed4-4188-b582-36f3316ec091
+---
+```
+

@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.892Z
+---
+
+# List connection scheduled actions
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: c5dec9a1-a99c-4d56-8cad-0779ea12dccb
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/api-configuration"
+    attrs:
+      uid: b7fe2b78-14d8-41df-a66a-b0dcbe7d5972
+attrs:
+  uid: b6515e2b-803f-4953-9f0e-ee386b24fe61
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 5889c35d-b1ae-47bf-b7e7-17d6db393d8c
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 7b8ef58d-56e3-4c68-b07d-fd41986ccd54
+---
+```
+

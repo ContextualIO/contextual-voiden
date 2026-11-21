@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.453Z
+---
+
+# Get connection by secondary key
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 5af54bdd-90ea-480b-a726-3c0912de2ade
+    content: GET
+  - type: url
+    content: "{{noUrl}}/api-configuration/{key}/{value}"
+    attrs:
+      uid: 37693b31-eed3-420c-8435-55091795536d
+attrs:
+  uid: 9e17b2ae-2f5c-4cd3-8e9f-b55acddc7961
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 6d05abd1-dfb1-448f-a9d7-50a3f69f9ab3
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 61d37683-e4a6-4c37-8e2e-725466e20448
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: adb93bcb-6afa-4ba7-a0b3-ccd42963c8d9
+        row:
+          - key
+          - —
+      - attrs:
+          disabled: false
+          uid: f57b71f2-32d9-4772-a644-946233690e0f
+        row:
+          - value
+          - —
+attrs:
+  uid: af50b79e-ca52-46c0-b826-4b968290bfbd
+---
+```
+

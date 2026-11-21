@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.510Z
+---
+
+# Update user profile
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PUT
+      uid: 30561fc9-4fd4-4e09-b087-2dce63adb3ff
+    content: PUT
+  - type: url
+    content: "{{authUrl}}/users/{userId}/profile"
+    attrs:
+      uid: 01e714cd-90b4-4640-a4ff-208bc96f4b70
+attrs:
+  uid: 8da43e45-1927-47c9-abab-da2a2b6d5d64
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: d0d614e4-ae06-400c-a8d8-0c02016c6d9a
+        row:
+          - userId
+          - —
+attrs:
+  uid: cbff2d6d-1376-4b6e-a738-956ca2bf7733
+---
+```
+

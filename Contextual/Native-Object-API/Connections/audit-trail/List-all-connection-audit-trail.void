@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.617Z
+---
+
+# List all connection audit trail
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 4481af43-1a11-4e2f-9ccc-b92214209a8a
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$audit-trail/api-configuration"
+    attrs:
+      uid: 51e975d5-f84b-45e6-97fd-d4f12a07302b
+attrs:
+  uid: d8f5e7f7-f188-4214-8b15-ebc499cc3d4d
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: db27b69a-32f4-4adc-8ae7-9567a7bac628
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 1b256f86-e5d4-4203-bd42-a3bb5ff25729
+---
+```
+

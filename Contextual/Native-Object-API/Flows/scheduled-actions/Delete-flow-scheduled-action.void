@@ -1,0 +1,73 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.394Z
+---
+
+# Delete flow scheduled action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 9b6cd603-12d0-4125-95ba-bba1ca668ba8
+    content: DELETE
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/flow/{id}/{actionId}/{scheduledActionId}"
+    attrs:
+      uid: 64b292c0-a659-478b-87bf-34e1cdb3ce4a
+attrs:
+  uid: 8c9964c4-5345-4586-8ab6-63ff490ba71b
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: aae42c1b-33b1-4149-84c8-8fb60c80ced0
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: f9ee7120-00df-428a-9bd2-4c4e1deed0a8
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 9d1cd3ed-6619-4910-bb9f-6b65d84c2f7a
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: d60a5011-6387-4131-83fb-98dc55a6561e
+        row:
+          - actionId
+          - —
+      - attrs:
+          disabled: false
+          uid: 07b74ca9-8f73-4585-9e3f-8e4ca3d452d5
+        row:
+          - scheduledActionId
+          - —
+attrs:
+  uid: a3b0ad00-8eb8-46d2-b16c-2c1e20070421
+---
+```
+

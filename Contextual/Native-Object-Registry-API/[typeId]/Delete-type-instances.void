@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:13.613Z
+---
+
+# Delete type instances
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 73114685-26d9-4ba4-9494-dc1943ac01fa
+    content: DELETE
+  - type: url
+    content: "{{noRegistryUrl}}/types/{typeId}/instances"
+    attrs:
+      uid: 927e671a-12e2-49d0-9a4e-8d618881e6f0
+attrs:
+  uid: 11fbe5c0-a494-4eb4-af8c-2b3ed1023c07
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: f8a1e49b-bcf8-4cf5-9300-e17fcd4fa0d2
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: ea931a05-0703-4f68-b6e8-6e04a43100bd
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 04565f24-de80-40ce-b2d7-020c74635b96
+        row:
+          - typeId
+          - —
+attrs:
+  uid: da51ce68-3e2f-4f06-8405-4e0f68414fa0
+---
+```
+

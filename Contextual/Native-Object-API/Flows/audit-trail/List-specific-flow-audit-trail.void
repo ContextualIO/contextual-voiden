@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:09.966Z
+---
+
+# List specific flow audit trail
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 2a19a1bc-bb18-471b-873b-487f4904e127
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$audit-trail/flow/{id}"
+    attrs:
+      uid: 3fe6c93a-8a80-490b-b7ab-91f004c7082c
+attrs:
+  uid: e04d0101-2ff2-49e8-9c5d-f7a1b554a7c7
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 5764df78-8a57-4df3-8e27-37be2d113926
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 6d25b72b-98ea-4783-ad2a-ee39b4885197
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 2a62a6c0-d0b0-4473-9d0d-92440cb81937
+        row:
+          - id
+          - —
+attrs:
+  uid: b8ec9d00-7c9b-4eaa-87e9-f01929b2e3f5
+---
+```
+

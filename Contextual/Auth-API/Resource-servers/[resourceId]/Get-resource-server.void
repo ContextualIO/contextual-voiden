@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.916Z
+---
+
+# Get resource server
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: a9602631-e979-4b68-ab92-b7889b3afe2e
+    content: GET
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/resource-servers/{resourceId}"
+    attrs:
+      uid: 617d4fc9-3d2f-4ca7-b4b1-4a77aca1667f
+attrs:
+  uid: d2b2af3a-e6f5-4482-8960-52a4d598407e
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 7edf4ad2-c132-466a-acaf-743fbed693e9
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: d7445074-6859-4bcb-b912-479afc3100c6
+        row:
+          - resourceId
+          - —
+attrs:
+  uid: cb58d291-827d-4fd5-8ca9-f6f463f9877a
+---
+```
+

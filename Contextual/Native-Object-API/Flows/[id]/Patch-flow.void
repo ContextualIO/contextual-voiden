@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:09.849Z
+---
+
+# Patch flow
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PATCH
+      uid: 8a968295-aa79-4a9a-a46c-99a768ae5ea1
+    content: PATCH
+  - type: url
+    content: "{{noUrl}}/flow/{id}"
+    attrs:
+      uid: 818f885e-3be2-43a1-9cba-bdc9daffc87a
+attrs:
+  uid: 53c040a6-ff89-4e80-a307-6eda01380d50
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: dfa44051-1470-4003-9be0-c99665068a1f
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: a114335c-fe5e-4600-8ef6-0894c99c7939
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: cf797f37-133b-4928-8f0e-610ec09b4953
+        row:
+          - id
+          - —
+attrs:
+  uid: ebbe3c7d-5fb5-483d-933c-7036e86e2c79
+---
+```
+

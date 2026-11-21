@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:13.124Z
+---
+
+# Get type post insert trigger
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 8e3a4717-223f-414c-9c70-f99f07851899
+    content: GET
+  - type: url
+    content: "{{noRegistryUrl}}/types/{typeId}/triggers/post-insert/{triggerId}"
+    attrs:
+      uid: 5d8f4854-97f3-4d4a-b3cc-49f46d6cef04
+attrs:
+  uid: 57ea628b-9ac9-4615-a04f-891a14452ab9
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 2f959cc0-d181-42a3-a98a-b8ce49d7bb97
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 019b1e58-bb6a-4bc0-b4d2-9c31636f8ff2
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: fc0264b6-bf63-4185-bbde-779c8e869c38
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: 4fdceffe-d68e-4855-8de5-75e897f5d314
+        row:
+          - triggerId
+          - —
+attrs:
+  uid: 38549fb7-02c1-4f9e-abe7-56394a572fb5
+---
+```
+

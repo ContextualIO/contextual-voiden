@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.253Z
+---
+
+# List flow scheduled actions
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 7b8649fd-41c2-4eaf-bba2-22b6597f4117
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/flow"
+    attrs:
+      uid: 76a6e786-200d-4d90-a710-f03c6b049808
+attrs:
+  uid: b37a2db2-6b70-47ef-b0f2-caa229b5aaed
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 1d8ed122-0298-4bd8-8aee-c02e1f2b4b10
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 4f8069b9-1562-48d9-8593-fa461f8b8187
+---
+```
+

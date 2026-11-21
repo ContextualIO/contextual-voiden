@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.755Z
+---
+
+# Get client grant
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 8de247f7-f67d-451f-b594-8ea5b023052d
+    content: GET
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/client-grants/{grantId}"
+    attrs:
+      uid: 7aaa47d0-310c-496f-a472-8a29b60ad2e7
+attrs:
+  uid: 20eec3f9-3dd5-4760-a543-0ebf849f2c2a
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 3c11e766-0cf8-4742-b128-af079f25331c
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: 3a8ac206-e4d5-4a86-bd6a-521d0d2568ae
+        row:
+          - grantId
+          - —
+attrs:
+  uid: ad1e89ae-7f8b-4679-8bca-14f778f57235
+---
+```
+

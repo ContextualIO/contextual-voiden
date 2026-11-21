@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:13.979Z
+---
+
+# Update role
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PUT
+      uid: d296948c-bf0d-4def-b36b-0824ae8520bf
+    content: PUT
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/roles/{roleId}"
+    attrs:
+      uid: 0393f06d-2fc9-48c6-a48b-5bc3a1e50a78
+attrs:
+  uid: ca6171b8-3dbb-4d5f-8934-f67ebab48314
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: e120976f-4a18-402a-8240-145d33705f24
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: 566ad064-d94d-43d4-9cf8-c06127795094
+        row:
+          - roleId
+          - —
+attrs:
+  uid: 248673a0-80e3-4890-a662-e1120a01d03b
+---
+```
+

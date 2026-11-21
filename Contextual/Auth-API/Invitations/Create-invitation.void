@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.208Z
+---
+
+# Create invitation
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: 37cb5123-4789-4807-ae23-6583aa30c538
+    content: POST
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/invitations"
+    attrs:
+      uid: b148f9b7-0028-43f6-a483-e051a64ccd0d
+attrs:
+  uid: f933b3ee-c7be-4014-9a01-89894f855ed4
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 2e623ae3-a3d5-485f-9cfc-e5ea47078833
+        row:
+          - organizationId
+          - —
+attrs:
+  uid: 63ae7db7-ee01-4b41-89e7-ca48500b4677
+---
+```
+

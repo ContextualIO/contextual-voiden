@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.383Z
+---
+
+# Create agent
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: 250c2d0e-8d81-43e8-8b47-0def3e246917
+    content: POST
+  - type: url
+    content: "{{noUrl}}/agent"
+    attrs:
+      uid: 28033db8-376c-49be-af5e-b13411feb93c
+attrs:
+  uid: 27479919-38c3-4317-8748-11aee9d8a811
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 57054c6b-b1dc-412b-ae60-c2d6cc7f4ce2
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 0df361de-5d0f-43c2-936a-9fe00c2b5d86
+---
+```
+

@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.139Z
+---
+
+# Delete invitation
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 3a76ebe4-2108-474c-9167-779fcc9ee821
+    content: DELETE
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/invitations/{invitationId}"
+    attrs:
+      uid: f7b2f710-6557-49ce-b2e2-f63c6ac6deee
+attrs:
+  uid: 4f952d49-f063-4f16-80e4-9f97d00a4ffc
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: d710ef9b-0fd4-4e33-beea-eef74e325879
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: 4950d25e-cbee-40d0-8d12-346af964fc52
+        row:
+          - invitationId
+          - —
+attrs:
+  uid: 72f8f9cb-679b-456d-84ae-a8df1dd1f3bb
+---
+```
+

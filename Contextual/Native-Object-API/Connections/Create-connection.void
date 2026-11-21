@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.149Z
+---
+
+# Create connection
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: 97f637c2-66f0-436d-b81c-7426c5003989
+    content: POST
+  - type: url
+    content: "{{noUrl}}/api-configuration"
+    attrs:
+      uid: a22dd352-cd5f-40e4-bf00-497a3d944d86
+attrs:
+  uid: b194a2a8-f98a-4e61-b4af-5c6dc5139e70
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 6addf1b4-207a-498a-a8e9-cbd4cab391ce
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: ed0a0b31-8b49-4e05-9a37-c9e5af1393d2
+---
+```
+

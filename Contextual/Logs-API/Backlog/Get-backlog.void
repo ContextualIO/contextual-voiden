@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:15.349Z
+---
+
+# Get backlog
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 886e1a1e-064e-4530-8777-40e67dbb0bc6
+    content: GET
+  - type: url
+    content: "{{logsUrl}}/backlog"
+    attrs:
+      uid: a4ed8f49-4d48-432a-8242-9bbe0103ad94
+attrs:
+  uid: 8eee3b9f-32ad-4d75-8e83-2fab11f40dc9
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 3ec5216b-be93-462e-b007-4f9d591e6c41
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: bbff3af9-cffe-4e8e-ad39-2a0e201f52a9
+---
+```
+

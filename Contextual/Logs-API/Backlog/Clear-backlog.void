@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:15.371Z
+---
+
+# Clear backlog
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 4bc7d2ac-0075-4b12-9a01-0ee3e3b14e58
+    content: DELETE
+  - type: url
+    content: "{{logsUrl}}/backlog"
+    attrs:
+      uid: b0d41d13-a165-4f27-863e-9d6c721c7342
+attrs:
+  uid: 3f6aa871-f8e8-4e5f-972f-1ea317307bf6
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: a09bcdef-3960-4e8e-8ab9-99ba8da56b63
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: a3ac325d-4fd0-4dbd-85a2-7d2a4390968a
+---
+```
+

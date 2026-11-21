@@ -1,0 +1,55 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.336Z
+---
+
+# Page agents
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: dc6131b6-5f4b-4868-91fe-ef7995f53512
+    content: POST
+  - type: url
+    content: "{{noUrl}}/$page/agent"
+    attrs:
+      uid: a61dadae-9374-4ce4-a81b-927b66ef3f3b
+attrs:
+  uid: 69249f74-4992-40cf-9446-4cf36910a1cd
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: a7474bd0-16e6-41b9-aa9b-e27a666203a5
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 01c04a09-fbfa-4994-a97e-5ca3fec631b3
+---
+```
+
+```void
+---
+type: json_body
+attrs:
+  importedFrom: ""
+  body: "{}"
+  contentType: json
+  uid: 8ad3e295-f69c-4851-b337-31bf0cdb4a33
+---
+```
+

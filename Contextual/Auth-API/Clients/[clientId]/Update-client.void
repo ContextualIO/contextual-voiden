@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.604Z
+---
+
+# Update client
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PUT
+      uid: 2565b451-a694-4dfa-9aec-91796fe1d1d5
+    content: PUT
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/clients/{clientId}"
+    attrs:
+      uid: ab2ac588-1708-4a11-bb0a-010ecead9178
+attrs:
+  uid: 281ef9d0-8bda-4cd1-b997-c5668f9f3ac9
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 2cc702f7-ba4e-4e37-95c0-ae6f9d4ef95e
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: 329a8be5-dfeb-473e-b6ac-d2ef16b523c3
+        row:
+          - clientId
+          - —
+attrs:
+  uid: dae35d04-b55b-41a3-9c84-1ca9cf0aa175
+---
+```
+

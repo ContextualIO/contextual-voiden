@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.983Z
+---
+
+# Update agent template
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PUT
+      uid: facfa7f9-4f73-4c0a-8ef4-e27402ca4c85
+    content: PUT
+  - type: url
+    content: "{{noUrl}}/$templates/agent/{id}"
+    attrs:
+      uid: 69855fad-22a3-4d24-80f8-d418fe11bed6
+attrs:
+  uid: 48d9ccec-adfd-4b52-99ef-76c9f669b526
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: f1a767a4-843b-4320-a8fb-24f416c28947
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: e721f43e-17ad-4270-b04e-d1b27d2fc256
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: d38b3c15-3937-4a25-97cb-4a0f5111b2ee
+        row:
+          - id
+          - —
+attrs:
+  uid: f261d0a6-be64-4ab6-ad5a-a069e98f6b61
+---
+```
+

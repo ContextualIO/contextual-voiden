@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:13.240Z
+---
+
+# Create type post update triggers
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: cc82573f-c0d2-4c9c-bdd9-a03158e16fb6
+    content: POST
+  - type: url
+    content: "{{noRegistryUrl}}/types/{typeId}/triggers/post-update"
+    attrs:
+      uid: a14cab59-26cc-4b5d-9f16-358ac95e9838
+attrs:
+  uid: 6d5e761e-cbb0-4cd5-9370-95d397648358
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 25e5e894-ef37-44fc-9edd-355ccf5b1d0e
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: fc0ff0bb-c251-41b9-8017-be25efcae2ef
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 7b0ecc66-016a-413b-a58e-5d9f9bf7a88a
+        row:
+          - typeId
+          - —
+attrs:
+  uid: a6e39a67-8a35-440e-a8f8-bc68d00d4b7c
+---
+```
+

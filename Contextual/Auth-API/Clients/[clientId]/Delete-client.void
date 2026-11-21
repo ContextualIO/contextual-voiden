@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.629Z
+---
+
+# Delete client
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: ef40b6e2-c5fe-4766-9192-784a4e75fc80
+    content: DELETE
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/clients/{clientId}"
+    attrs:
+      uid: 3ff4aa52-0474-40af-9d97-0169596a2a43
+attrs:
+  uid: bfaa3738-e8fe-4f80-96e4-05ff37551acc
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: bc92e482-c6cd-46ca-9e29-4e09b72f76d5
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: eb803dd5-f18e-45fc-9355-dd8279d2ebc1
+        row:
+          - clientId
+          - —
+attrs:
+  uid: 92563e8e-1d6b-42d5-8036-1df693dd9126
+---
+```
+

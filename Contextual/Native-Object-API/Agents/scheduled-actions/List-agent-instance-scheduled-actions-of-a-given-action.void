@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.097Z
+---
+
+# List agent instance scheduled actions of a given action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 40afc5a5-17e4-4748-9118-2fd3f8af9795
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/agent/{id}/{actionId}"
+    attrs:
+      uid: 843a1ca6-a42a-4d4d-b602-70d33d06d33e
+attrs:
+  uid: 9a16af38-08e6-4139-a394-28121bb98729
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 2deecee1-ad69-4ef4-990b-52b63c870f6b
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 0107d15e-86c4-4818-a100-79dc857a8fb9
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 0f10a5bd-43bd-4c25-851f-a5028c12419e
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: 9ace3001-5cc1-4aec-8fdf-09ccfb143495
+        row:
+          - actionId
+          - —
+attrs:
+  uid: 901e2d28-4ba7-4a38-a836-04a326a57a95
+---
+```
+

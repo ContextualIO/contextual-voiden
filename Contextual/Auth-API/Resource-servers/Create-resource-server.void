@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:15.033Z
+---
+
+# Create resource server
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: 44aff6f2-be1e-474e-9b93-81098f209991
+    content: POST
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/resource-servers"
+    attrs:
+      uid: a4719ce7-a89a-48db-9c79-4e73470987de
+attrs:
+  uid: d957c08c-9404-450d-9d7c-47f3afa9f116
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 022cb4ff-be89-4b2b-a673-2472607e378c
+        row:
+          - organizationId
+          - —
+attrs:
+  uid: 72b83e42-1c2f-40cf-907e-15702aba7bf1
+---
+```
+

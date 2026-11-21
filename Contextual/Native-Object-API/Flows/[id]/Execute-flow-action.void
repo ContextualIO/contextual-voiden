@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:09.873Z
+---
+
+# Execute flow action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PATCH
+      uid: f5938788-e30e-4f23-904e-90dcb6ef1646
+    content: PATCH
+  - type: url
+    content: "{{noUrl}}/flow/{id}/actions/{actionId}"
+    attrs:
+      uid: 8a6243e8-af66-4ff0-a2a1-0b30987f42b4
+attrs:
+  uid: 4ac771b7-d5f1-4710-8b84-887ccc43f891
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 62a3a8da-62bb-4a00-807f-ea4146c491cb
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 8fdf33b5-ec57-43fd-b123-4144101d24af
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: d0d8250f-c050-4486-8fd8-6bee212714d9
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: 482b4e85-e2b9-400e-a634-773db43b60c1
+        row:
+          - actionId
+          - —
+attrs:
+  uid: 65b0963e-dec1-4af7-a726-1681f6272349
+---
+```
+

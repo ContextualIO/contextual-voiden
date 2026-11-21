@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.939Z
+---
+
+# Update resource server
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PUT
+      uid: 57d80ec7-4c27-42ef-b988-025a9f35ad03
+    content: PUT
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/resource-servers/{resourceId}"
+    attrs:
+      uid: 78160e7c-7c17-4588-87ed-ab07e95b8a38
+attrs:
+  uid: 66224e64-de0c-4ec8-a3b5-ade407083ce2
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: f392d05f-d09d-400e-a669-599b7088dc81
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: 0ab80d01-6c4d-4309-a3d3-7655ccd5990b
+        row:
+          - resourceId
+          - —
+attrs:
+  uid: c8a50702-3186-42dd-b11c-520f1d9d90ad
+---
+```
+

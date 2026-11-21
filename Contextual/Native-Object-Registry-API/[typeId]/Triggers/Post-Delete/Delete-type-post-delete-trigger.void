@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:13.454Z
+---
+
+# Delete type post delete trigger
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 0e6d9a91-bed8-484f-83b3-aa208c62a83e
+    content: DELETE
+  - type: url
+    content: "{{noRegistryUrl}}/types/{typeId}/triggers/post-delete/{triggerId}"
+    attrs:
+      uid: a05a7a60-deb1-40ac-9641-ba465b57cdc3
+attrs:
+  uid: d5593b24-7049-4463-9880-90082f6ba87f
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 249073ec-2eed-4045-8394-df95d3f1e4cf
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 6c8effad-975a-42a3-adb2-656721115bf5
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 400c0426-43fa-403d-b2ac-0ceaa5735720
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: 97d91528-2c93-4f22-aa7f-377c9674e2cd
+        row:
+          - triggerId
+          - —
+attrs:
+  uid: f40485e9-b959-4f49-af02-87ef478a098a
+---
+```
+

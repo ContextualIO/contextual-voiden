@@ -1,0 +1,27 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:13.911Z
+---
+
+# List organizations
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: f25b3d79-8ee3-4736-94f1-4ac8548da26d
+    content: GET
+  - type: url
+    content: "{{authUrl}}/organizations"
+    attrs:
+      uid: 56730941-e128-4942-babc-6224d581ade5
+attrs:
+  uid: 8d3d0681-8fd6-4282-aab5-56862f10862b
+---
+```
+

@@ -1,0 +1,73 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.729Z
+---
+
+# Create record scheduled action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: b366f087-276d-4027-9947-eac2495c4db3
+    content: POST
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/{typeId}/{id}/{actionId}"
+    attrs:
+      uid: aee77c84-af39-416f-accc-03e2dbd16f34
+attrs:
+  uid: bf6419ae-b8d5-4671-93c0-b4a362e94d96
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 6dc36bf2-e964-45da-a032-7a797e2b7a96
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: cacb774f-c4c4-41ab-a737-6bd40cecc3a8
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 251a9db2-92a3-4ff1-85b1-eb6ebeea0fe2
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: 2d2c1105-e670-4d98-96c3-4d96fa7a53d0
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: e20a504b-eadf-43c8-a8db-8000fca6f377
+        row:
+          - actionId
+          - —
+attrs:
+  uid: d7ecddb6-dcdf-46dc-90a4-644f62d5be89
+---
+```
+

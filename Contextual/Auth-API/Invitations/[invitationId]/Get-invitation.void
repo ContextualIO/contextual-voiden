@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.117Z
+---
+
+# Get invitation
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 075c9f2f-8d74-410f-86a9-7726afd0f4ca
+    content: GET
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/invitations/{invitationId}"
+    attrs:
+      uid: bf5444bf-2708-4c40-8fd8-fa8eea5cef29
+attrs:
+  uid: b7545923-9e7c-4b40-91b5-fd5fd6ebcf27
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 72311a95-f5c9-4550-9708-a69ad01d797b
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: ce3d686f-4e86-4134-bf0f-ad3fa798943a
+        row:
+          - invitationId
+          - —
+attrs:
+  uid: 7a5d5e53-1070-413a-9e80-559bee3f4fc8
+---
+```
+

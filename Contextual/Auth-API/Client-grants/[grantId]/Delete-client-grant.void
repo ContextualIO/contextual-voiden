@@ -1,0 +1,50 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.802Z
+---
+
+# Delete client grant
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: ac3eb0b3-7ab6-44ef-afe0-06510e45a41f
+    content: DELETE
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/client-grants/{grantId}"
+    attrs:
+      uid: b468c3ad-3813-4b77-9fc5-93c93ffcf8af
+attrs:
+  uid: a77c682a-08d7-4b0a-b388-df68e59e9c6d
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 763e77fb-5901-489e-9141-cb076b3853c4
+        row:
+          - organizationId
+          - —
+      - attrs:
+          disabled: false
+          uid: da73c665-c29d-4045-b4b1-bace2ce41b25
+        row:
+          - grantId
+          - —
+attrs:
+  uid: 39d7fc31-6a38-4b75-94b3-d3713e701df3
+---
+```
+

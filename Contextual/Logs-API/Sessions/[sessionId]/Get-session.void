@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:15.212Z
+---
+
+# Get session
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: ec8bd7b4-18c4-41c5-bf46-d2b57e76bbaf
+    content: GET
+  - type: url
+    content: "{{logsUrl}}/sessions/{sessionId}"
+    attrs:
+      uid: ff094cf7-fcc3-4df4-b2e4-acc2dbb57e32
+attrs:
+  uid: 2a6af4bd-2150-4c71-9004-94d35eae43d0
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 3e9161e4-3073-4cdc-ba1c-03980effb281
+        row:
+          - sessionId
+          - —
+attrs:
+  uid: aa07ea0e-03d1-494e-abfd-4a3be26529ca
+---
+```
+

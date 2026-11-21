@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.288Z
+---
+
+# Patch record
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: PATCH
+      uid: e1576917-b3d4-46cc-bd77-76252c09e6f0
+    content: PATCH
+  - type: url
+    content: "{{noUrl}}/{typeId}/{id}"
+    attrs:
+      uid: 595c18c5-6dc4-4da5-ac71-9b5cd4941e13
+attrs:
+  uid: ce1feaea-62f7-4c6d-855b-956552309394
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: b5e0ad3f-23a6-4a34-bf6a-3008d22a7975
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 31403dd4-f62d-4862-a716-15bc45ab18d3
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: b04c880f-d27a-42ff-9e71-8c1859c7b3a6
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: 85467713-5e02-4dc2-b086-bf353a5c9558
+        row:
+          - id
+          - —
+attrs:
+  uid: e255f7b6-6e51-4d57-8013-cc3cecaeeeaf
+---
+```
+

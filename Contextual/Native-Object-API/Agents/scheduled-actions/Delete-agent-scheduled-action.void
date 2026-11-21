@@ -1,0 +1,73 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.269Z
+---
+
+# Delete agent scheduled action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: c4d8b30a-ac7f-4676-9f01-4b847c32100b
+    content: DELETE
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/agent/{id}/{actionId}/{scheduledActionId}"
+    attrs:
+      uid: 8c16729b-026c-407d-bed6-ab7879b2ccd5
+attrs:
+  uid: b41543b6-d22a-448a-a820-806f8ac3b85d
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: a583f1c4-5cea-4611-91ca-5270a4d57572
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 96e9a2c3-45e2-4ec7-a277-2acf12d87b3e
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: fa7f22c5-a583-4c93-8c62-b5f2ca6721ca
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: 1e78c95a-866f-4fa0-bc60-fde132038f4e
+        row:
+          - actionId
+          - —
+      - attrs:
+          disabled: false
+          uid: 01b3840d-0859-49e9-a5e5-ca6d794c2887
+        row:
+          - scheduledActionId
+          - —
+attrs:
+  uid: 29c92e79-e8e3-48eb-834e-2e0da0761604
+---
+```
+

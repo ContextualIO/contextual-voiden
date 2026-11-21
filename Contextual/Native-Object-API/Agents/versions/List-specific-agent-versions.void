@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.866Z
+---
+
+# List specific agent versions
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: d1cf308b-6e75-47db-83ca-32b725be5810
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$versions/agent/{id}"
+    attrs:
+      uid: 7cc59ef9-9a2d-466a-9ebd-82c74da60c6a
+attrs:
+  uid: de4ff68b-afce-4d52-8a7d-978344f5a846
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: cc4f967e-5cb1-4bff-9e2d-5088574b4061
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 574dd9c3-08a3-4060-b050-01779746fb6a
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: bf971471-bc92-40cc-a165-70da7e55c5e6
+        row:
+          - id
+          - —
+attrs:
+  uid: a686c0e5-6642-4016-90d0-4defd43e74f4
+---
+```
+

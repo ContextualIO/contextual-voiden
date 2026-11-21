@@ -1,0 +1,61 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.845Z
+---
+
+# Delete connection template
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: DELETE
+      uid: 257ecfa9-3ca0-4710-98d4-3d55d644a56d
+    content: DELETE
+  - type: url
+    content: "{{noUrl}}/$templates/api-configuration/{id}"
+    attrs:
+      uid: 1efa46b4-16bd-4234-a7f4-c518a445699a
+attrs:
+  uid: 33759891-c65b-4565-987d-cf8dff709033
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: fe57b859-b6ce-4a0d-82f5-56c25cb5fd92
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 2674ba11-a276-4de4-bb7f-d2c851457759
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: d67ba2d7-0cc6-45ae-9162-ded93cba6cdb
+        row:
+          - id
+          - —
+attrs:
+  uid: b903313d-61fd-408d-86c4-d4d541732700
+---
+```
+

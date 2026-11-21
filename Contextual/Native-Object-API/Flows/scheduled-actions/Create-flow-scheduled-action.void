@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:10.322Z
+---
+
+# Create flow scheduled action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: 6956c719-96ad-4d8b-b417-aea59fa8f63a
+    content: POST
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/flow/{id}/{actionId}"
+    attrs:
+      uid: d8714462-4e3a-4ec2-bcb6-c74f5e650e45
+attrs:
+  uid: bad58d18-1ce9-49c6-a544-28e94b369ae0
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 36763ed3-59b3-412d-afa1-4754c6599408
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: fcdbb8fb-cd35-4703-81e9-1efd2df92fb3
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 157a061b-94c2-449f-b16b-f1fb8c784112
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: 4eed7c84-76ae-4472-baf4-0b860f66ed47
+        row:
+          - actionId
+          - —
+attrs:
+  uid: 14109614-a95f-41d0-aa28-271ae84f93cc
+---
+```
+

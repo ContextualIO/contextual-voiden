@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.680Z
+---
+
+# List record scheduled actions
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: b2ad4bb6-169e-4819-a4aa-e2952c6c2cc9
+    content: GET
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/{typeId}/{id}"
+    attrs:
+      uid: 7c3b6c89-5280-4cfe-8bb6-75f84324c259
+attrs:
+  uid: 9f435d75-cbf3-48b7-8491-81850c75b14d
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 4ae71083-e851-44ab-ba4f-48026fbe8c2c
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: e37b22d9-5722-4120-939d-c1052239ae02
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 8f235ffa-6b5f-4ed4-b2a7-ad6850c10d96
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: 48fea1ae-aff1-4656-a9ae-e67b90892e78
+        row:
+          - id
+          - —
+attrs:
+  uid: 9219f929-6a15-4d93-b881-458da95f078a
+---
+```
+

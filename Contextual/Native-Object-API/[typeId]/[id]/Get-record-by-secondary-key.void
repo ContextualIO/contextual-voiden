@@ -1,0 +1,73 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:12.217Z
+---
+
+# Get record by secondary key
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: GET
+      uid: 822aeb41-e0e3-4294-9d6e-620cab9fb37c
+    content: GET
+  - type: url
+    content: "{{noUrl}}/{typeId}/{key}/{value}"
+    attrs:
+      uid: 98aa061e-d708-42c8-bfad-1c2110082150
+attrs:
+  uid: 1dc4e19d-7e03-47c0-9286-56ef302fcf68
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 8104280a-0df0-48eb-873e-ec3b53b7bc97
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: e2717084-fdae-4dff-a46a-a975540fd8f5
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: b1cb8678-94e2-4e88-b466-58c03d0a4a0d
+        row:
+          - typeId
+          - —
+      - attrs:
+          disabled: false
+          uid: 597d1005-d9c7-47ca-a2e8-45662e7ff3f6
+        row:
+          - key
+          - —
+      - attrs:
+          disabled: false
+          uid: d94e6a42-c869-48a8-9248-cd8fa8ab4463
+        row:
+          - value
+          - —
+attrs:
+  uid: 91bec675-29cc-41d1-a19b-3503ad241ee0
+---
+```
+

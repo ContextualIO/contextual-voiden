@@ -1,0 +1,67 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:11.124Z
+---
+
+# Create agent scheduled action
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: 223c3283-f859-4298-a0d1-8d0aad17fcef
+    content: POST
+  - type: url
+    content: "{{noUrl}}/$scheduled-actions/agent/{id}/{actionId}"
+    attrs:
+      uid: d1b7c065-5351-4e42-b2e4-6fa93d4269a8
+attrs:
+  uid: 4292ce4f-10b2-4998-b50b-788d2d8495ad
+---
+```
+
+```void
+---
+type: headers-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: e3b58eef-8b78-4aef-86ea-ce0526695b65
+        row:
+          - x-org-id
+          - nasser
+attrs:
+  uid: 5a29ea14-ec84-49a2-b677-a917c4d15d7b
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: fe6d6e30-6bc5-4e9b-bd5a-73938c6bc5b4
+        row:
+          - id
+          - —
+      - attrs:
+          disabled: false
+          uid: 6bc1e0ab-c761-4393-ab70-73e775442c14
+        row:
+          - actionId
+          - —
+attrs:
+  uid: 98ac6862-612d-41df-a75f-32611dd5f47e
+---
+```
+

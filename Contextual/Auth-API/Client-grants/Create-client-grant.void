@@ -1,0 +1,44 @@
+---
+version: 0.20.1
+generatedBy: Voiden Extension
+note: This file is auto-generated
+generatedAt: 2026-11-20T23:52:14.870Z
+---
+
+# Create client grant
+
+```void
+---
+type: request
+content:
+  - type: method
+    attrs:
+      method: POST
+      uid: 2f4d7c3d-8125-44ac-b1fd-a3141e2931c5
+    content: POST
+  - type: url
+    content: "{{authUrl}}/organizations/{organizationId}/client-grants"
+    attrs:
+      uid: ae05549b-eaae-4cae-b579-f739dac6a8d2
+attrs:
+  uid: 377345ef-deef-4ebe-a8f3-665c23897f29
+---
+```
+
+```void
+---
+type: path-table
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          uid: 1e3d87cf-c660-4138-96a6-60b416d2d086
+        row:
+          - organizationId
+          - —
+attrs:
+  uid: 6dea0b01-7811-47f6-8351-0e2ebe096b66
+---
+```
+
