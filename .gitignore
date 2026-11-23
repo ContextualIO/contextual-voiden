@@ -5,3 +5,4 @@
 
 !**/.voiden/env-public.yaml
 !**/.voiden/env-*-public.yaml
+.voiden/*

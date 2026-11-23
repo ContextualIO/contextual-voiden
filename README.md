@@ -29,10 +29,25 @@ brew install --cask voiden
 
 Full install docs: <https://docs.voiden.md/docs/getting-started-section/getting-started/installation/>
 
+### Install the Contextual Org Picker extension
+
+The [Contextual Org Picker](https://github.com/ContextualIO/voiden-org-picker) extension fills in the `x-org-id` header for you. The first time you send a request in an environment, it lists the organizations you can access and asks you to pick one, much like Voiden asks you to sign in.
+
+1. Download `contextual-org-picker.zip` from the [latest release](https://github.com/ContextualIO/voiden-org-picker/releases/latest), or from the terminal:
+
+   ```sh
+   curl -LO https://github.com/ContextualIO/voiden-org-picker/releases/latest/download/contextual-org-picker.zip
+   ```
+
+2. In Voiden, go to **Extensions → ⋯ → Install from file** and choose the zip. Don't unzip it first. Reload Voiden if it asks you to.
+3. Check the status bar at the bottom of the window. It should now show **Select org**.
+
+To update the extension, download the zip from the newest release and install it again the same way.
+
 ## 2. Open the workspace
 
 ```sh
-git clone <this-repo-url> contextual-voiden
+git clone https://github.com/ContextualIO/contextual-voiden.git
 ```
 
 Then in Voiden, choose **Open Folder** and select the `contextual-voiden` directory. The request tree in the sidebar matches the `Contextual/` folder layout.
@@ -65,7 +80,7 @@ The environments are committed in [env-public.yaml](env-public.yaml) at the repo
 
 Every request builds its URL from `{{DOMAIN_SUFFIX}}`, so switching environments points all requests at that stack. The shared base URLs (`NO_API_URL`, `NO_REGISTRY_API_URL`, `AUTH_API_URL`, `LOGS_API_URL`) are defined once, at the top of the file.
 
-**Personal or secret values** (tokens, client secrets, your own org ID) go in `.voiden/env-private.yaml`. That file is gitignored, as is everything else in `.voiden/`. Never put secrets in `env-public.yaml`, because it's committed and shared with everyone.
+**Personal or secret values** (tokens, client secrets, your own org ID) go in `.voiden/env-private.yaml`. That file is gitignored, as is everything else in `.voiden/`. Never put secrets in `env-public.yaml`: this repository is public, so anything committed is visible to anyone.
 
 > ⚠️ **Prod-001 is live production.** Requests that create, update or delete data (`Create-*`, `Update-*`, `Patch-*`, `Delete-*`, `Execute-*`, `Clear-backlog`, `Flush-all-sessions`) take effect immediately. Double-check the selected environment before you send one.
 
@@ -97,7 +112,9 @@ The callback listens on `localhost:9090`, so make sure nothing else is using tha
 
 1. In the sidebar, open a request such as `Contextual/Auth-API/Users-Current/Get-current-user.void`.
 2. **Path parameters:** folders named in square brackets (`[clientId]`, `[userId]`, `[id]`, `[typeId]` …) contain requests with path variables. Fill them in from the request's path-params table, where they show as `—` until you set them. The organization is never a path variable: it's sent in the `x-org-id` header (next step).
-3. **`x-org-id` header:** every request inherits `x-org-id: {{ORG_ID}}` from [Contextual/.voiden-inherited.void](Contextual/.voiden-inherited.void). Set `ORG_ID` to your org's ID in `.voiden/env-private.yaml` under each environment you use; orgs differ between Dev, QA and Prod. Run **Auth-API → Organizations → List-organizations** to see the orgs you can use.
+3. **`x-org-id` header:** every request inherits an `x-org-id` header from [Contextual/.voiden-inherited.void](Contextual/.voiden-inherited.void).
+   - **With the [org picker](#install-the-contextual-org-picker-extension):** there's nothing to set. On your first request in an environment, the picker asks you to choose an org, or picks it for you if you only have one. It then sets `x-org-id` on every request. Your choice is remembered per environment, because orgs differ between Dev, QA and Prod. To switch orgs, click the org ID in the status bar. If you dismiss the picker, the request is cancelled.
+   - **Without it:** set `ORG_ID` to your org's ID in `.voiden/env-private.yaml`, under each environment you use. Run **Auth-API → Organizations → List-organizations** to see the orgs you can access.
 4. **Body:** `Create-*`, `Update-*`, `Query-*` and `Page-*` requests have a JSON body block. Query and page requests default to `{}`.
 5. Press **Send**.
 
@@ -132,4 +149,4 @@ A good first check is **Auth-API → Users-Current → Get-current-user**. It co
 - **Headers are inherited, not merged:** requests get their headers (currently just `x-org-id`) from `Contextual/.voiden-inherited.void`. If you add a headers table to a request, it **replaces** the inherited one completely, so include `x-org-id: {{ORG_ID}}` in it too.
 - **Variable names:** environment variables use `UPPER_SNAKE_CASE` (`{{NO_API_URL}}`, `{{DOMAIN_SUFFIX}}` …). Path parameters keep their single-brace API names (`{clientId}`, `{userId}` …).
 - **Environments and auth:** changes to `env-public.yaml` or `Contextual/.voiden-inherited.void` affect everyone, so review them like any shared config.
-- **Secrets:** never commit tokens, client secrets or anything in `env-private.yaml`.
+- **Secrets:** this repository is public. Never commit tokens, client secrets, real org or user IDs, or anything from `env-private.yaml`.
