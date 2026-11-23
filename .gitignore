@@ -1,7 +1,9 @@
 # Voiden
 **/.voiden/*
 .voiden/**
-**/.voiden/*
 !**/.voiden/env-public.yaml
 !**/.voiden/env-*-public.yaml
 !**/.voiden/.voiden-projects
+
+# Voiden
+.voiden-inherited.void
