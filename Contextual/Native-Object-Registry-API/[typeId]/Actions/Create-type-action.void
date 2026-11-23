@@ -17,7 +17,7 @@ content:
       uid: 3fa3082b-a98d-4c42-aadf-717626dd8de2
     content: POST
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}/actions"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}/actions"
     attrs:
       uid: c6cfcc06-f483-4b2e-a8d1-2980ab7bcf9f
 attrs:

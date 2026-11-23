@@ -17,7 +17,7 @@ content:
       uid: a82c6819-333f-4797-9139-1bb0765a8053
     content: POST
   - type: url
-    content: "{{noUrl}}/flow"
+    content: "{{NO_API_URL}}/flow"
     attrs:
       uid: cb8780e6-c31f-47e6-9b8b-d341c31dd8de
 attrs:

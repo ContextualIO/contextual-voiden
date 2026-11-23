@@ -17,7 +17,7 @@ content:
       uid: 2fb11fb6-8544-4b06-a30d-b3db733831f8
     content: DELETE
   - type: url
-    content: "{{noUrl}}/$templates/agent/{id}"
+    content: "{{NO_API_URL}}/$templates/agent/{id}"
     attrs:
       uid: 8adad8ee-cfda-4e3e-9396-27fe05394c80
 attrs:

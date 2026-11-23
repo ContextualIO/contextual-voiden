@@ -17,7 +17,7 @@ content:
       uid: d704ec0b-85fd-4a21-a4c9-6d04a47cf1bc
     content: GET
   - type: url
-    content: "{{noUrl}}/$templates/api-configuration"
+    content: "{{NO_API_URL}}/$templates/api-configuration"
     attrs:
       uid: b178b675-14d8-4903-8e29-a89386942aae
 attrs:

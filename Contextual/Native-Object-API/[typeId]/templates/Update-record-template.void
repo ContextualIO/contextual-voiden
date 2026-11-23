@@ -17,7 +17,7 @@ content:
       uid: bd057a23-7112-4ad2-af54-87a0d36cfaa4
     content: PUT
   - type: url
-    content: "{{noUrl}}/$templates/{typeId}/{id}"
+    content: "{{NO_API_URL}}/$templates/{typeId}/{id}"
     attrs:
       uid: db045971-d7ce-4243-8447-51307b7f964f
 attrs:

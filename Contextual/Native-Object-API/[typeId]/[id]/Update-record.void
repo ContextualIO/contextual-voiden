@@ -17,7 +17,7 @@ content:
       uid: e3e053bb-ba40-48ca-ad6e-fd7042025284
     content: PUT
   - type: url
-    content: "{{noUrl}}/{typeId}/{id}"
+    content: "{{NO_API_URL}}/{typeId}/{id}"
     attrs:
       uid: 26a5ef41-916f-41f1-9243-c7a5d73ca43e
 attrs:

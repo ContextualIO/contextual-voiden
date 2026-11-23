@@ -17,7 +17,7 @@ content:
       uid: 16d56968-e11e-47b7-a3e1-fe8a8c0d360e
     content: GET
   - type: url
-    content: "{{noUrl}}/$scheduled-actions/agent"
+    content: "{{NO_API_URL}}/$scheduled-actions/agent"
     attrs:
       uid: 89cec59a-4bd9-4009-8ec2-3d32816ffcc4
 attrs:

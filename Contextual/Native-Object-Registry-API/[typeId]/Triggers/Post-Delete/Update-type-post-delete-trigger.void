@@ -17,7 +17,7 @@ content:
       uid: 3f89f79f-0271-46e2-980c-a270660f6607
     content: PUT
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}/triggers/post-delete/{triggerId}"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}/triggers/post-delete/{triggerId}"
     attrs:
       uid: a94b8bd3-97c1-474f-a399-e7f56ede531e
 attrs:

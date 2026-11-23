@@ -17,7 +17,7 @@ content:
       uid: ba0b7f64-7791-45b7-9f99-070410f076d1
     content: POST
   - type: url
-    content: "{{noUrl}}/$query/{typeId}"
+    content: "{{NO_API_URL}}/$query/{typeId}"
     attrs:
       uid: 713aa08e-963b-4039-8195-6ec621e46f6f
 attrs:

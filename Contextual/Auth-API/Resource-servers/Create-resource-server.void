@@ -17,7 +17,7 @@ content:
       uid: 44aff6f2-be1e-474e-9b93-81098f209991
     content: POST
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/resource-servers"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/resource-servers"
     attrs:
       uid: a4719ce7-a89a-48db-9c79-4e73470987de
 attrs:

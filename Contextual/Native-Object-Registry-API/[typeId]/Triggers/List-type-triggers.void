@@ -17,7 +17,7 @@ content:
       uid: bfd4cf4c-8a94-47c9-b56a-f372d7ed2257
     content: GET
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}/triggers"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}/triggers"
     attrs:
       uid: 6c4010a1-0f26-46a7-9322-486199cfa209
 attrs:

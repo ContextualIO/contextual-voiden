@@ -17,7 +17,7 @@ content:
       uid: 6956c719-96ad-4d8b-b417-aea59fa8f63a
     content: POST
   - type: url
-    content: "{{noUrl}}/$scheduled-actions/flow/{id}/{actionId}"
+    content: "{{NO_API_URL}}/$scheduled-actions/flow/{id}/{actionId}"
     attrs:
       uid: d8714462-4e3a-4ec2-bcb6-c74f5e650e45
 attrs:

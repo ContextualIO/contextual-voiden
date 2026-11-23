@@ -17,7 +17,7 @@ content:
       uid: 958f852a-3a78-447b-bc4a-0b141f1e39cf
     content: GET
   - type: url
-    content: "{{noUrl}}/$audit-trail/agent"
+    content: "{{NO_API_URL}}/$audit-trail/agent"
     attrs:
       uid: 2903cfef-3975-4a72-a434-558dc6a84183
 attrs:

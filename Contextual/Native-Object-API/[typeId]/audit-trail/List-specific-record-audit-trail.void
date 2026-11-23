@@ -17,7 +17,7 @@ content:
       uid: ed8b0e31-5e75-4e67-8d7c-30860b43777c
     content: GET
   - type: url
-    content: "{{noUrl}}/$audit-trail/{typeId}/{id}"
+    content: "{{NO_API_URL}}/$audit-trail/{typeId}/{id}"
     attrs:
       uid: c1ab9675-62f5-42f2-8d77-8e1fba1c65de
 attrs:

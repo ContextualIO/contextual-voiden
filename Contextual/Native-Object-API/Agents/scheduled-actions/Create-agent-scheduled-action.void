@@ -17,7 +17,7 @@ content:
       uid: 223c3283-f859-4298-a0d1-8d0aad17fcef
     content: POST
   - type: url
-    content: "{{noUrl}}/$scheduled-actions/agent/{id}/{actionId}"
+    content: "{{NO_API_URL}}/$scheduled-actions/agent/{id}/{actionId}"
     attrs:
       uid: d1b7c065-5351-4e42-b2e4-6fa93d4269a8
 attrs:

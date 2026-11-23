@@ -17,7 +17,7 @@ content:
       uid: ac3eb0b3-7ab6-44ef-afe0-06510e45a41f
     content: DELETE
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/client-grants/{grantId}"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/client-grants/{grantId}"
     attrs:
       uid: b468c3ad-3813-4b77-9fc5-93c93ffcf8af
 attrs:

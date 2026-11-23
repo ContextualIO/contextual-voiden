@@ -17,7 +17,7 @@ content:
       uid: 419b9029-a860-4603-8cf5-1389d79af675
     content: GET
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/me"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/me"
     attrs:
       uid: 2554faa4-049b-4c1a-a107-4adb11f9a2c4
 attrs:

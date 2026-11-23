@@ -17,7 +17,7 @@ content:
       uid: 400284a5-eb02-4552-89b8-54de8b1a2de3
     content: PUT
   - type: url
-    content: "{{noUrl}}/$scheduled-actions/api-configuration/{id}/{actionId}/{scheduledActionId}"
+    content: "{{NO_API_URL}}/$scheduled-actions/api-configuration/{id}/{actionId}/{scheduledActionId}"
     attrs:
       uid: 13f7a48b-24db-49f4-81ea-a758b657300a
 attrs:

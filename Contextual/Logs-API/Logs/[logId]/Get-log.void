@@ -17,7 +17,7 @@ content:
       uid: 7f82e223-4a8f-4356-9f93-088d3d8ab0ff
     content: GET
   - type: url
-    content: "{{logsUrl}}/logs/{logId}"
+    content: "{{LOGS_API_URL}}/logs/{logId}"
     attrs:
       uid: b5929675-c3ec-4259-a03e-8eb53c159dff
 attrs:

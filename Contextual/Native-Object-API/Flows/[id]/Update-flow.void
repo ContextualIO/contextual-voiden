@@ -17,7 +17,7 @@ content:
       uid: 364729a1-af54-4d5c-a5ad-2f3a02fc95f2
     content: PUT
   - type: url
-    content: "{{noUrl}}/flow/{id}"
+    content: "{{NO_API_URL}}/flow/{id}"
     attrs:
       uid: 1d7dc7e6-0f40-4ce4-b7c5-37a779b059c7
 attrs:

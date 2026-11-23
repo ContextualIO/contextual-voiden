@@ -17,7 +17,7 @@ content:
       uid: aec1a8b6-9362-46ae-a9aa-d7e3d63208f7
     content: PATCH
   - type: url
-    content: "{{noUrl}}/agent/{id}"
+    content: "{{NO_API_URL}}/agent/{id}"
     attrs:
       uid: 66d7a7ab-22cd-4aac-b8e3-655b032b316d
 attrs:

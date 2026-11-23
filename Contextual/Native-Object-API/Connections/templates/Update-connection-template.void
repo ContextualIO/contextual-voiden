@@ -17,7 +17,7 @@ content:
       uid: b57bd329-dbd2-4d2d-a138-8135cc575161
     content: PUT
   - type: url
-    content: "{{noUrl}}/$templates/api-configuration/{id}"
+    content: "{{NO_API_URL}}/$templates/api-configuration/{id}"
     attrs:
       uid: 5732896e-692f-42f7-80dd-e18ffe603992
 attrs:

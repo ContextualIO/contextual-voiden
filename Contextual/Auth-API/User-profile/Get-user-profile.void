@@ -17,7 +17,7 @@ content:
       uid: 1a4290f6-a2c0-4119-b01d-48ae12949112
     content: GET
   - type: url
-    content: "{{authUrl}}/users/{userId}/profile"
+    content: "{{AUTH_API_URL}}/users/{userId}/profile"
     attrs:
       uid: ad4ecf3e-b8ec-4400-ae65-626a9759c861
 attrs:

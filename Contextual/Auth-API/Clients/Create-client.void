@@ -17,7 +17,7 @@ content:
       uid: ba754fcc-f89d-47e8-83ba-ea1dc1e76d25
     content: POST
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/clients"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/clients"
     attrs:
       uid: 18a7e8ec-93b7-4f86-92cf-30526ec8926f
 attrs:

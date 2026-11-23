@@ -17,7 +17,7 @@ content:
       uid: 89818eba-d5ab-44a0-a1a7-bf11be171c1e
     content: PATCH
   - type: url
-    content: "{{noUrl}}/api-configuration/{id}/actions/{actionId}"
+    content: "{{NO_API_URL}}/api-configuration/{id}/actions/{actionId}"
     attrs:
       uid: 3e447e63-c86c-4bb7-8485-424f54cad52e
 attrs:

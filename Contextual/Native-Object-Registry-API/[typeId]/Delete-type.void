@@ -17,7 +17,7 @@ content:
       uid: 6b810a0c-19a8-4061-88c1-b9bfe7ac46ef
     content: DELETE
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}"
     attrs:
       uid: 9a3af432-a1d7-4e62-9a20-e34fb87f511a
 attrs:

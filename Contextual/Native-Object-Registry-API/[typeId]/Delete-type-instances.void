@@ -17,7 +17,7 @@ content:
       uid: 73114685-26d9-4ba4-9494-dc1943ac01fa
     content: DELETE
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}/instances"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}/instances"
     attrs:
       uid: 927e671a-12e2-49d0-9a4e-8d618881e6f0
 attrs:

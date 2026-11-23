@@ -17,7 +17,7 @@ content:
       uid: 250c2d0e-8d81-43e8-8b47-0def3e246917
     content: POST
   - type: url
-    content: "{{noUrl}}/agent"
+    content: "{{NO_API_URL}}/agent"
     attrs:
       uid: 28033db8-376c-49be-af5e-b13411feb93c
 attrs:

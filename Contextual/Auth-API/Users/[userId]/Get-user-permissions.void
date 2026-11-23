@@ -17,7 +17,7 @@ content:
       uid: c9b6b502-b671-4731-819c-c614cfa19294
     content: GET
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/users/{userId}/permissions"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/users/{userId}/permissions"
     attrs:
       uid: a7ad5b00-03e9-483f-af00-9b4e946e3022
 attrs:

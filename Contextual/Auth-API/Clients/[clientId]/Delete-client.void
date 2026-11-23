@@ -17,7 +17,7 @@ content:
       uid: ef40b6e2-c5fe-4766-9192-784a4e75fc80
     content: DELETE
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/clients/{clientId}"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/clients/{clientId}"
     attrs:
       uid: 3ff4aa52-0474-40af-9d97-0169596a2a43
 attrs:

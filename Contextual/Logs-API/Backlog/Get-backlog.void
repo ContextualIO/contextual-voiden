@@ -17,7 +17,7 @@ content:
       uid: 886e1a1e-064e-4530-8777-40e67dbb0bc6
     content: GET
   - type: url
-    content: "{{logsUrl}}/backlog"
+    content: "{{LOGS_API_URL}}/backlog"
     attrs:
       uid: a4ed8f49-4d48-432a-8242-9bbe0103ad94
 attrs:

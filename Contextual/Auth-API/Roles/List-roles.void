@@ -17,7 +17,7 @@ content:
       uid: ad8d6cf5-9899-444d-b522-2f1a858792cb
     content: GET
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/roles"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/roles"
     attrs:
       uid: 6ba85835-92fe-4cbc-833f-3835245ad45b
 attrs:

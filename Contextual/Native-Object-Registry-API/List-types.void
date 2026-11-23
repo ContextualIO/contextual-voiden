@@ -17,7 +17,7 @@ content:
       uid: 33a4f709-1ae0-43e6-8799-33acf114a5c8
     content: GET
   - type: url
-    content: "{{noRegistryUrl}}/types"
+    content: "{{NO_REGISTRY_API_URL}}/types"
     attrs:
       uid: 495b852e-f1af-46aa-a880-ec0491627d48
 attrs:

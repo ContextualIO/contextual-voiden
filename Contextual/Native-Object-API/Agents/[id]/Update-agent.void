@@ -17,7 +17,7 @@ content:
       uid: bd5b2586-a24b-4352-b576-d7613635c1d1
     content: PUT
   - type: url
-    content: "{{noUrl}}/agent/{id}"
+    content: "{{NO_API_URL}}/agent/{id}"
     attrs:
       uid: eaecfc38-0ab3-4d5f-be02-744e89286f87
 attrs:

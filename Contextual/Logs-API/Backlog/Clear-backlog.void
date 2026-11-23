@@ -17,7 +17,7 @@ content:
       uid: 4bc7d2ac-0075-4b12-9a01-0ee3e3b14e58
     content: DELETE
   - type: url
-    content: "{{logsUrl}}/backlog"
+    content: "{{LOGS_API_URL}}/backlog"
     attrs:
       uid: b0d41d13-a165-4f27-863e-9d6c721c7342
 attrs:

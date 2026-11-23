@@ -17,7 +17,7 @@ content:
       uid: 97f637c2-66f0-436d-b81c-7426c5003989
     content: POST
   - type: url
-    content: "{{noUrl}}/api-configuration"
+    content: "{{NO_API_URL}}/api-configuration"
     attrs:
       uid: a22dd352-cd5f-40e4-bf00-497a3d944d86
 attrs:

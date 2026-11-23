@@ -17,7 +17,7 @@ content:
       uid: facfa7f9-4f73-4c0a-8ef4-e27402ca4c85
     content: PUT
   - type: url
-    content: "{{noUrl}}/$templates/agent/{id}"
+    content: "{{NO_API_URL}}/$templates/agent/{id}"
     attrs:
       uid: 69855fad-22a3-4d24-80f8-d418fe11bed6
 attrs:

@@ -17,7 +17,7 @@ content:
       uid: 8e387fe1-ba90-4506-99c0-8b32ed28120e
     content: POST
   - type: url
-    content: "{{noUrl}}/$page/flow"
+    content: "{{NO_API_URL}}/$page/flow"
     attrs:
       uid: 52ed3ef7-8c75-4656-aa0d-c7b8b0dfeda7
 attrs:

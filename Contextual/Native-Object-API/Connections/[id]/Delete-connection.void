@@ -17,7 +17,7 @@ content:
       uid: 87736842-86d9-4f2f-8d7a-affdd6360cab
     content: DELETE
   - type: url
-    content: "{{noUrl}}/api-configuration/{id}"
+    content: "{{NO_API_URL}}/api-configuration/{id}"
     attrs:
       uid: a044a567-fd8c-4a2b-af5c-3f1bd86bb0bb
 attrs:

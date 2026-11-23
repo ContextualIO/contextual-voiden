@@ -34,7 +34,7 @@ content:
   - type: url
     attrs:
       uid: 60ef866e-cf9a-4e25-b309-0e8d53355310
-    content: "{{authUrl}}/organizations/{organizationId}/certificate-statuses"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/certificate-statuses"
 ---
 ```
 ```void

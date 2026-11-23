@@ -17,7 +17,7 @@ content:
       uid: 98d214cc-f1a9-43df-bea2-f5d968a27c3a
     content: GET
   - type: url
-    content: "{{noUrl}}/$versions/{typeId}/{id}"
+    content: "{{NO_API_URL}}/$versions/{typeId}/{id}"
     attrs:
       uid: 3a7a00d1-9864-40bd-b438-37a59ad7af2a
 attrs:

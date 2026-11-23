@@ -17,7 +17,7 @@ content:
       uid: e06968d6-c2c3-458a-879a-1f32541987f2
     content: DELETE
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}/triggers/post-update/{triggerId}"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}/triggers/post-update/{triggerId}"
     attrs:
       uid: 4cddc4aa-0178-493e-8b4b-8b6e1f843782
 attrs:

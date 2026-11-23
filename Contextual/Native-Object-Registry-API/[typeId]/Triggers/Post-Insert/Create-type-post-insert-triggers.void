@@ -17,7 +17,7 @@ content:
       uid: c3f28090-889e-4a9d-90c1-b22aa06a31f4
     content: POST
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}/triggers/post-insert"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}/triggers/post-insert"
     attrs:
       uid: 1501d89c-e257-40e2-ac5c-271f6c8ce34b
 attrs:

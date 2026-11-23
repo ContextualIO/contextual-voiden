@@ -24,19 +24,19 @@ content:
           omitIfUnresolved: false
         row:
           - auth_url
-          - https://{{authDomain}}/authorize?audience={{audience}}
+          - https://{{AUTH_DOMAIN}}/authorize?audience={{AUDIENCE}}
       - attrs:
           disabled: false
           omitIfUnresolved: false
         row:
           - token_url
-          - https://{{authDomain}}/oauth/token
+          - https://{{AUTH_DOMAIN}}/oauth/token
       - attrs:
           disabled: false
           omitIfUnresolved: false
         row:
           - client_id
-          - "{{clientId}}"
+          - "{{CLIENT_ID}}"
       - attrs:
           disabled: true
           omitIfUnresolved: false

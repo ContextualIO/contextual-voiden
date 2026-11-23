@@ -17,7 +17,7 @@ content:
       uid: 9b6cd603-12d0-4125-95ba-bba1ca668ba8
     content: DELETE
   - type: url
-    content: "{{noUrl}}/$scheduled-actions/flow/{id}/{actionId}/{scheduledActionId}"
+    content: "{{NO_API_URL}}/$scheduled-actions/flow/{id}/{actionId}/{scheduledActionId}"
     attrs:
       uid: 64b292c0-a659-478b-87bf-34e1cdb3ce4a
 attrs:

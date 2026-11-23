@@ -17,7 +17,7 @@ content:
       uid: e7d56490-73b9-428a-803a-a5e9c02ca50a
     content: GET
   - type: url
-    content: "{{noUrl}}/$templates/flow"
+    content: "{{NO_API_URL}}/$templates/flow"
     attrs:
       uid: 7bee1e64-aee0-4e24-826e-3e640c1152f4
 attrs:

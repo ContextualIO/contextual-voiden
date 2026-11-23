@@ -17,7 +17,7 @@ content:
       uid: 37cb5123-4789-4807-ae23-6583aa30c538
     content: POST
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/invitations"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/invitations"
     attrs:
       uid: b148f9b7-0028-43f6-a483-e051a64ccd0d
 attrs:

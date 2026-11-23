@@ -17,7 +17,7 @@ content:
       uid: f2a59de5-5114-46e1-ba85-bbffe5d98910
     content: DELETE
   - type: url
-    content: "{{noUrl}}/$scheduled-actions/api-configuration/{id}/{actionId}/{scheduledActionId}"
+    content: "{{NO_API_URL}}/$scheduled-actions/api-configuration/{id}/{actionId}/{scheduledActionId}"
     attrs:
       uid: ca8767f2-c3e0-4b1f-8b0b-7c71e32ce1d2
 attrs:

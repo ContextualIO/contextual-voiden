@@ -17,7 +17,7 @@ content:
       uid: 2f0c03a8-4d57-4554-9ba9-9d7ce7884d2f
     content: POST
   - type: url
-    content: "{{logsUrl}}/$page/sessions"
+    content: "{{LOGS_API_URL}}/$page/sessions"
     attrs:
       uid: 9a41424b-2f06-4db4-a833-29a9719eed50
 attrs:

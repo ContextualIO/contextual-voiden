@@ -17,7 +17,7 @@ content:
       uid: 0caf825d-50e4-482f-a288-59e3b1196237
     content: GET
   - type: url
-    content: "{{noUrl}}/$templates/agent"
+    content: "{{NO_API_URL}}/$templates/agent"
     attrs:
       uid: 93c3cd7c-e5d7-48e5-b603-3813ad54ae84
 attrs:

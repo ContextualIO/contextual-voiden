@@ -17,7 +17,7 @@ content:
       uid: 8a968295-aa79-4a9a-a46c-99a768ae5ea1
     content: PATCH
   - type: url
-    content: "{{noUrl}}/flow/{id}"
+    content: "{{NO_API_URL}}/flow/{id}"
     attrs:
       uid: 818f885e-3be2-43a1-9cba-bdc9daffc87a
 attrs:

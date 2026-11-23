@@ -17,7 +17,7 @@ content:
       uid: ed29d989-9538-4a59-8141-fb98ea39afff
     content: POST
   - type: url
-    content: "{{noUrl}}/$templates/{typeId}"
+    content: "{{NO_API_URL}}/$templates/{typeId}"
     attrs:
       uid: 683c1e6f-d322-4f21-862e-70c6550c1d37
 attrs:

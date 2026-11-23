@@ -17,7 +17,7 @@ content:
       uid: 0394f843-46e6-47cb-bc9a-0232734fff14
     content: GET
   - type: url
-    content: "{{noUrl}}/flow/{key}/{value}"
+    content: "{{NO_API_URL}}/flow/{key}/{value}"
     attrs:
       uid: 3469a020-2d9c-4858-936f-ea9696c73a95
 attrs:

@@ -17,7 +17,7 @@ content:
       uid: 3a4f7f17-a0a7-48b9-9e8d-d044436edb3d
     content: DELETE
   - type: url
-    content: "{{noUrl}}/$templates/flow/{id}"
+    content: "{{NO_API_URL}}/$templates/flow/{id}"
     attrs:
       uid: a1a1375b-f5b1-4f57-97be-4fcfec9c2a0a
 attrs:

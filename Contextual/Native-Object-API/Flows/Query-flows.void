@@ -17,7 +17,7 @@ content:
       uid: 9257a2d0-c754-4d0c-a4e2-66a509bad818
     content: POST
   - type: url
-    content: "{{noUrl}}/$query/flow"
+    content: "{{NO_API_URL}}/$query/flow"
     attrs:
       uid: 13212f5e-0d3f-4162-9db4-a3c596bf9d6d
 attrs:

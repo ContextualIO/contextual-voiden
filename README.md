@@ -6,10 +6,10 @@ This repo has 180+ requests across four APIs:
 
 | Folder | API | Base URL variable |
 | --- | --- | --- |
-| [Contextual/Auth-API](Contextual/Auth-API) | Organizations, users, roles, clients, client grants, invitations, resource servers | `{{authUrl}}` |
-| [Contextual/Logs-API](Contextual/Logs-API) | Logs, sessions, backlog | `{{logsUrl}}` |
-| [Contextual/Native-Object-API](Contextual/Native-Object-API) | Agents, connections, flows and generic `[typeId]` records (CRUD, query, page, actions, audit trail, versions, scheduled actions, templates) | `{{noUrl}}` |
-| [Contextual/Native-Object-Registry-API](Contextual/Native-Object-Registry-API) | Object type definitions and their versions | `{{noRegistryUrl}}` |
+| [Contextual/Auth-API](Contextual/Auth-API) | Organizations, users, roles, clients, client grants, invitations, resource servers | `{{AUTH_API_URL}}` |
+| [Contextual/Logs-API](Contextual/Logs-API) | Logs, sessions, backlog | `{{LOGS_API_URL}}` |
+| [Contextual/Native-Object-API](Contextual/Native-Object-API) | Agents, connections, flows and generic `[typeId]` records (CRUD, query, page, actions, audit trail, versions, scheduled actions, templates) | `{{NO_API_URL}}` |
+| [Contextual/Native-Object-Registry-API](Contextual/Native-Object-Registry-API) | Object type definitions and their versions | `{{NO_REGISTRY_API_URL}}` |
 
 The requests were imported from [Contextual.postman_collection.json](Contextual.postman_collection.json), which is kept here as the source of truth.
 
@@ -63,7 +63,7 @@ The environments are committed in [env-public.yaml](env-public.yaml) at the repo
 | **[101] QA-001** | `qa-001.qa.contextual.io` | `contextual-qa.us.auth0.com` |
 | **[201] Prod-001** | `prod-001.prod.contextual.io` | `contextual.us.auth0.com` |
 
-Every request builds its URL from `{{domainSuffix}}`, so switching environments points all requests at that stack. The shared base URLs (`noUrl`, `noRegistryUrl`, `authUrl`, `logsUrl`) are defined once, at the top of the file.
+Every request builds its URL from `{{DOMAIN_SUFFIX}}`, so switching environments points all requests at that stack. The shared base URLs (`NO_API_URL`, `NO_REGISTRY_API_URL`, `AUTH_API_URL`, `LOGS_API_URL`) are defined once, at the top of the file.
 
 **Personal or secret values** (tokens, client secrets, your own org ID) go in `.voiden/env-private.yaml`. That file is gitignored, as is everything else in `.voiden/`. Never put secrets in `env-public.yaml`, because it's committed and shared with everyone.
 
@@ -77,16 +77,16 @@ All requests use **OAuth 2.0 Authorization Code** against Auth0. The auth is set
 2. Click **Get token**. A browser window opens and you sign in with your Contextual account.
 3. Voiden stores the token, sends it as `Authorization: Bearer …` on every request, and refreshes it automatically.
 
-The auth fields use environment variables (`{{authDomain}}`, `{{clientId}}`, `{{audience}}`), so the same config works for every environment. Get a new token after you switch environments.
+The auth fields use environment variables (`{{AUTH_DOMAIN}}`, `{{CLIENT_ID}}`, `{{AUDIENCE}}`), so the same config works for every environment. Get a new token after you switch environments.
 
 For reference, the committed config is:
 
 | Field | Value |
 | --- | --- |
 | Grant type | Authorization Code |
-| Auth URL | `https://{{authDomain}}/authorize?audience={{audience}}` |
-| Token URL | `https://{{authDomain}}/oauth/token` |
-| Client ID | `{{clientId}}` |
+| Auth URL | `https://{{AUTH_DOMAIN}}/authorize?audience={{AUDIENCE}}` |
+| Token URL | `https://{{AUTH_DOMAIN}}/oauth/token` |
+| Client ID | `{{CLIENT_ID}}` |
 | Client secret | *(none; public client)* |
 | Callback URL | `http://localhost:9090/callback` |
 | Add token to | Header, prefix `Bearer` |
@@ -127,7 +127,8 @@ A good first check is **Auth-API → Users-Current → Get-current-user**. It co
 
 - **Unlock first.** Changes only save while Lock Mode is off. Turn it off, make the change in Voiden (it writes straight to the `.void` file), then **turn Lock Mode back on**. Voiden can remember the unlocked state between launches, so if you forget, later sessions will save edits to disk. Edits you made while locked are not kept, so redo them after unlocking.
 - **Keep templates generic.** Before committing, make sure the file has no IDs, org names or bodies from a one-off test, and leave placeholders such as `—` in path params. Commit only the change you meant to make.
-- **New endpoint:** create the `.void` file in the matching API/resource folder, use the existing base-URL variables (`{{noUrl}}`, `{{authUrl}}` …) and don't hard-code hostnames.
+- **New endpoint:** create the `.void` file in the matching API/resource folder, use the existing base-URL variables (`{{NO_API_URL}}`, `{{AUTH_API_URL}}` …) and don't hard-code hostnames.
 - **Re-import from Postman:** if the Postman collection changes, replace `Contextual.postman_collection.json` and re-import it with Voiden's Postman import. Check the diff carefully, because a re-import regenerates the `uid`s in every file.
+- **Variable names:** environment variables use `UPPER_SNAKE_CASE` (`{{NO_API_URL}}`, `{{DOMAIN_SUFFIX}}` …). Path parameters keep their single-brace API names (`{organizationId}`, `{clientId}` …).
 - **Environments and auth:** changes to `env-public.yaml` or `Contextual/.voiden-inherited.void` affect everyone, so review them like any shared config.
 - **Secrets:** never commit tokens, client secrets or anything in `env-private.yaml`.

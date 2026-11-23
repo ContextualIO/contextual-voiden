@@ -17,7 +17,7 @@ content:
       uid: 68662b77-984b-4d32-ae42-516c8f806294
     content: PUT
   - type: url
-    content: "{{logsUrl}}/sessions/flush"
+    content: "{{LOGS_API_URL}}/sessions/flush"
     attrs:
       uid: 911802b7-c7ca-4928-ac4c-7f6ebcf5dffd
 attrs:

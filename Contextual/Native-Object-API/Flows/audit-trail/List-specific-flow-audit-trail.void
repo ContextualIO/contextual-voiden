@@ -17,7 +17,7 @@ content:
       uid: 2a19a1bc-bb18-471b-873b-487f4904e127
     content: GET
   - type: url
-    content: "{{noUrl}}/$audit-trail/flow/{id}"
+    content: "{{NO_API_URL}}/$audit-trail/flow/{id}"
     attrs:
       uid: 3fe6c93a-8a80-490b-b7ab-91f004c7082c
 attrs:

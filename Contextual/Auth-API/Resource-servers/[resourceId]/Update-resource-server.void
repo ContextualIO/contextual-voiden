@@ -17,7 +17,7 @@ content:
       uid: 57d80ec7-4c27-42ef-b988-025a9f35ad03
     content: PUT
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/resource-servers/{resourceId}"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/resource-servers/{resourceId}"
     attrs:
       uid: 78160e7c-7c17-4588-87ed-ab07e95b8a38
 attrs:

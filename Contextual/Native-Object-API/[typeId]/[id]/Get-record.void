@@ -17,7 +17,7 @@ content:
       uid: ec500eae-4ee5-43b0-914f-88c0faa07e46
     content: GET
   - type: url
-    content: "{{noUrl}}/{typeId}/{id}"
+    content: "{{NO_API_URL}}/{typeId}/{id}"
     attrs:
       uid: b71cf567-49ff-450d-9f83-98e2636877c5
 attrs:

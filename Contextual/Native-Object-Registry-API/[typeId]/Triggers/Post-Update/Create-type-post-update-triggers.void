@@ -17,7 +17,7 @@ content:
       uid: cc82573f-c0d2-4c9c-bdd9-a03158e16fb6
     content: POST
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}/triggers/post-update"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}/triggers/post-update"
     attrs:
       uid: a14cab59-26cc-4b5d-9f16-358ac95e9838
 attrs:

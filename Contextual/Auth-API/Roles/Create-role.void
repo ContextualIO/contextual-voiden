@@ -17,7 +17,7 @@ content:
       uid: 2893036b-c82d-445d-b9ce-639cf2009c33
     content: POST
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/roles"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/roles"
     attrs:
       uid: 02e96848-6fe5-4b00-944f-addd486f4c21
 attrs:

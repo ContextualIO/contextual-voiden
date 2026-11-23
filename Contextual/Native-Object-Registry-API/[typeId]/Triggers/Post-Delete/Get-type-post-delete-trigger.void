@@ -17,7 +17,7 @@ content:
       uid: 8fc4c302-b608-4bfc-914f-7094fa94364d
     content: GET
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}/triggers/post-delete/{triggerId}"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}/triggers/post-delete/{triggerId}"
     attrs:
       uid: 603554ec-2d5a-4ef5-8c14-d4a0717196be
 attrs:

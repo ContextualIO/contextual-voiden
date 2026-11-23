@@ -17,7 +17,7 @@ content:
       uid: d1cf308b-6e75-47db-83ca-32b725be5810
     content: GET
   - type: url
-    content: "{{noUrl}}/$versions/agent/{id}"
+    content: "{{NO_API_URL}}/$versions/agent/{id}"
     attrs:
       uid: 7cc59ef9-9a2d-466a-9ebd-82c74da60c6a
 attrs:

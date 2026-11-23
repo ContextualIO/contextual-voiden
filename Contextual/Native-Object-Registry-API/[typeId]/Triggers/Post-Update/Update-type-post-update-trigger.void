@@ -17,7 +17,7 @@ content:
       uid: 29d016d5-a8c3-4ff2-b158-5560373e1b18
     content: PUT
   - type: url
-    content: "{{noRegistryUrl}}/types/{typeId}/triggers/post-update/{triggerId}"
+    content: "{{NO_REGISTRY_API_URL}}/types/{typeId}/triggers/post-update/{triggerId}"
     attrs:
       uid: 2bd5451d-d2c0-4aac-b11d-d9b4eb7a14b6
 attrs:

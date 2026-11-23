@@ -17,7 +17,7 @@ content:
       uid: 894fb71a-cc5f-41bf-af56-4d791d1e1e5e
     content: DELETE
   - type: url
-    content: "{{authUrl}}/organizations/{organizationId}/roles/{roleId}"
+    content: "{{AUTH_API_URL}}/organizations/{organizationId}/roles/{roleId}"
     attrs:
       uid: 6344af41-207a-4522-95b9-ffafb2809cfd
 attrs:

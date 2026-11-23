@@ -1,32 +1,32 @@
 contextual:
   variables:
-    noUrl: "https://native-object.{{domainSuffix}}/api/v1"
-    noRegistryUrl: "https://native-object-registry.{{domainSuffix}}/api/v1"
-    authUrl: "https://auth.{{domainSuffix}}/api/v1"
-    logsUrl: "https://logs.{{domainSuffix}}/api/v1"
+    NO_API_URL: "https://native-object.{{DOMAIN_SUFFIX}}/api/v1"
+    NO_REGISTRY_API_URL: "https://native-object-registry.{{DOMAIN_SUFFIX}}/api/v1"
+    AUTH_API_URL: "https://auth.{{DOMAIN_SUFFIX}}/api/v1"
+    LOGS_API_URL: "https://logs.{{DOMAIN_SUFFIX}}/api/v1"
   children:
     dev-001:
       variables:
-        authDomain: "contextual-dev.us.auth0.com"
-        clientId: "NJXw21XzQjG4VBFVcX52fW2rGNcm2kOR"
-        audience: "https://contextual-dev/no-api"
-        domainSuffix: "dev-001.dev.contextual.io"
+        AUTH_DOMAIN: "contextual-dev.us.auth0.com"
+        CLIENT_ID: "NJXw21XzQjG4VBFVcX52fW2rGNcm2kOR"
+        AUDIENCE: "https://contextual-dev/no-api"
+        DOMAIN_SUFFIX: "dev-001.dev.contextual.io"
       intermediate: false
       displayName: "[001] Dev-001"
     qa-001:
       variables:
-        authDomain: "contextual-qa.us.auth0.com"
-        clientId: "9d9UaqOrThOAB1ffZIEeIhgPwihF2OKV"
-        audience: "https://contextual-qa/no-api"
-        domainSuffix: "qa-001.qa.contextual.io"
+        AUTH_DOMAIN: "contextual-qa.us.auth0.com"
+        CLIENT_ID: "9d9UaqOrThOAB1ffZIEeIhgPwihF2OKV"
+        AUDIENCE: "https://contextual-qa/no-api"
+        DOMAIN_SUFFIX: "qa-001.qa.contextual.io"
       intermediate: false
       displayName: "[101] QA-001"
     prod-001:
       variables:
-        authDomain: "contextual.us.auth0.com"
-        clientId: "GHtTuTix8qR04ZZWHWoG4lHoeO34vN3E"
-        audience: "https://contextual/no-api"
-        domainSuffix: "prod-001.prod.contextual.io"
+        AUTH_DOMAIN: "contextual.us.auth0.com"
+        CLIENT_ID: "GHtTuTix8qR04ZZWHWoG4lHoeO34vN3E"
+        AUDIENCE: "https://contextual/no-api"
+        DOMAIN_SUFFIX: "prod-001.prod.contextual.io"
       intermediate: false
       displayName: "[201] Prod-001"
   intermediate: true
