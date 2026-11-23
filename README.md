@@ -55,7 +55,7 @@ Unlock only when you want to change a shared request on purpose. See [Adding or 
 
 ## 3. Choose an environment
 
-The environments are committed in [.voiden/env-public.yaml](.voiden/env-public.yaml), so they're ready as soon as you open the folder. Choose one in Voiden's environment selector:
+The environments are committed in [env-public.yaml](env-public.yaml) at the repo root, which is where Voiden recommends keeping them, so they're ready as soon as you open the folder. Choose one in Voiden's environment selector:
 
 | Environment | Stack | Auth0 tenant |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ The environments are committed in [.voiden/env-public.yaml](.voiden/env-public.y
 
 Every request builds its URL from `{{domainSuffix}}`, so switching environments points all requests at that stack. The shared base URLs (`noUrl`, `noRegistryUrl`, `authUrl`, `logsUrl`) are defined once, at the top of the file.
 
-**Personal or secret values** (tokens, client secrets, your own org ID) go in `.voiden/env-private.yaml`. That file is gitignored, as is everything else in `.voiden/` except the public env files. Never put secrets in `env-public.yaml`.
+**Personal or secret values** (tokens, client secrets, your own org ID) go in `.voiden/env-private.yaml`. That file is gitignored, as is everything else in `.voiden/`. Never put secrets in `env-public.yaml`, because it's committed and shared with everyone.
 
 > ⚠️ **Prod-001 is live production.** Requests that create, update or delete data (`Create-*`, `Update-*`, `Patch-*`, `Delete-*`, `Execute-*`, `Clear-backlog`, `Flush-all-sessions`) take effect immediately. Double-check the selected environment before you send one.
 
@@ -115,10 +115,11 @@ A good first check is **Auth-API → Users-Current → Get-current-user**. It co
 │   ├── Logs-API/
 │   ├── Native-Object-API/
 │   └── Native-Object-Registry-API/
-├── .voiden/
-│   ├── env-public.yaml              # Dev / QA / Prod environments (committed)
-│   ├── env-private.yaml             # your secrets and overrides (gitignored)
-│   └── history/                     # local response history, unlocked sessions only (gitignored)
+├── .voiden/                         # local Voiden state (gitignored)
+│   ├── .voiden-projects             # lock state for this project
+│   ├── env-private.yaml             # your secrets and overrides
+│   └── history/                     # local response history, unlocked sessions only
+├── env-public.yaml                  # Dev / QA / Prod environments (committed)
 └── Contextual.postman_collection.json   # original Postman export
 ```
 
@@ -128,5 +129,5 @@ A good first check is **Auth-API → Users-Current → Get-current-user**. It co
 - **Keep templates generic.** Before committing, make sure the file has no IDs, org names or bodies from a one-off test, and leave placeholders such as `—` in path params. Commit only the change you meant to make.
 - **New endpoint:** create the `.void` file in the matching API/resource folder, use the existing base-URL variables (`{{noUrl}}`, `{{authUrl}}` …) and don't hard-code hostnames.
 - **Re-import from Postman:** if the Postman collection changes, replace `Contextual.postman_collection.json` and re-import it with Voiden's Postman import. Check the diff carefully, because a re-import regenerates the `uid`s in every file.
-- **Environments and auth:** changes to `.voiden/env-public.yaml` or `Contextual/.voiden-inherited.void` affect everyone, so review them like any shared config.
+- **Environments and auth:** changes to `env-public.yaml` or `Contextual/.voiden-inherited.void` affect everyone, so review them like any shared config.
 - **Secrets:** never commit tokens, client secrets or anything in `env-private.yaml`.
