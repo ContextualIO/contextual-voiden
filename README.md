@@ -37,17 +37,19 @@ git clone <this-repo-url> contextual-voiden
 
 Then in Voiden, choose **Open Folder** and select the `contextual-voiden` directory. The request tree in the sidebar matches the `Contextual/` folder layout.
 
-### Turn on Lock Mode
+### Lock the project every time you launch Voiden
 
 The `.void` files in this repo are shared request templates. Normally Voiden saves every edit straight to disk, so filling in an ID, changing the `x-org-id` header or pasting a test body would change the shared file and appear in `git status`.
 
-To avoid that, **work in [Lock Mode](https://docs.voiden.md/docs/core-features-section/lock-mode/lock-mode-overview/)**:
+To avoid that, **always work in [Lock Mode](https://docs.voiden.md/docs/core-features-section/lock-mode/lock-mode-overview/)**. Each time you launch Voiden and open this project:
 
-1. Click the **lock icon** in the status bar at the bottom of the Voiden window. When the icon is active, the project is locked.
-2. Use Voiden as usual. You can still edit requests, switch environments and send requests, but Voiden keeps everything in memory and writes nothing to disk, including response history.
-3. Your per-request edits are discarded when you unlock or close Voiden. The `.void` files stay exactly as they are in git.
+1. Look at the **lock icon** in the status bar at the bottom of the Voiden window.
+2. If it isn't active, click it to lock the project.
+3. Use Voiden as usual. You can still edit requests, switch environments and send requests, but Voiden keeps everything in memory and writes nothing to disk, including response history.
 
-Voiden remembers the lock for each project. It stores `"locked": true` in `.voiden/.voiden-projects`, so once you lock this project it opens locked every time until you unlock it. You only need to do this once after cloning, and again after any time you unlock to make a deliberate change.
+Your per-request edits are discarded when you unlock or close Voiden, and the `.void` files stay exactly as they are in git.
+
+A new clone always opens unlocked, because the lock state isn't committed. Voiden saves it locally in `.voiden/.voiden-projects`, which is gitignored. Voiden may remember your lock between launches, but check the icon every time anyway. It's the only thing between a quick test and a dirty working tree.
 
 Unlock only when you want to change a shared request on purpose. See [Adding or changing requests](#adding-or-changing-requests).
 
@@ -122,7 +124,7 @@ A good first check is **Auth-API → Users-Current → Get-current-user**. It co
 
 ## Adding or changing requests
 
-- **Unlock first.** Changes only save while Lock Mode is off. Turn it off, make the change in Voiden (it writes straight to the `.void` file), then **turn Lock Mode back on**. The unlocked state is remembered too, so if you forget, every later session will save edits to disk. Edits you made while locked are not kept, so redo them after unlocking.
+- **Unlock first.** Changes only save while Lock Mode is off. Turn it off, make the change in Voiden (it writes straight to the `.void` file), then **turn Lock Mode back on**. Voiden can remember the unlocked state between launches, so if you forget, later sessions will save edits to disk. Edits you made while locked are not kept, so redo them after unlocking.
 - **Keep templates generic.** Before committing, make sure the file has no IDs, org names or bodies from a one-off test, and leave placeholders such as `—` in path params. Commit only the change you meant to make.
 - **New endpoint:** create the `.void` file in the matching API/resource folder, use the existing base-URL variables (`{{noUrl}}`, `{{authUrl}}` …) and don't hard-code hostnames.
 - **Re-import from Postman:** if the Postman collection changes, replace `Contextual.postman_collection.json` and re-import it with Voiden's Postman import. Check the diff carefully, because a re-import regenerates the `uid`s in every file.
