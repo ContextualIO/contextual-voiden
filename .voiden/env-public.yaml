@@ -1,0 +1,33 @@
+contextual:
+  variables:
+    noUrl: "https://native-object.{{domainSuffix}}/api/v1"
+    noRegistryUrl: "https://native-object-registry.{{domainSuffix}}/api/v1"
+    authUrl: "https://auth.{{domainSuffix}}/api/v1"
+    logsUrl: "https://logs.{{domainSuffix}}/api/v1"
+  children:
+    dev-001:
+      variables:
+        authDomain: "contextual-dev.us.auth0.com"
+        clientId: "NJXw21XzQjG4VBFVcX52fW2rGNcm2kOR"
+        audience: "https://contextual-dev/no-api"
+        domainSuffix: "dev-001.dev.contextual.io"
+      intermediate: false
+      displayName: "[001] Dev-001"
+    qa-001:
+      variables:
+        authDomain: "contextual-qa.us.auth0.com"
+        clientId: "9d9UaqOrThOAB1ffZIEeIhgPwihF2OKV"
+        audience: "https://contextual-qa/no-api"
+        domainSuffix: "qa-001.qa.contextual.io"
+      intermediate: false
+      displayName: "[101] QA-001"
+    prod-001:
+      variables:
+        authDomain: "contextual.us.auth0.com"
+        clientId: "GHtTuTix8qR04ZZWHWoG4lHoeO34vN3E"
+        audience: "https://contextual/no-api"
+        domainSuffix: "prod-001.prod.contextual.io"
+      intermediate: false
+      displayName: "[201] Prod-001"
+  intermediate: true
+  displayName: "Contextual base variables"
