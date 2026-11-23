@@ -17,28 +17,11 @@ content:
       uid: 2893036b-c82d-445d-b9ce-639cf2009c33
     content: POST
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/roles"
+    content: "{{AUTH_API_URL}}/roles"
     attrs:
       uid: 02e96848-6fe5-4b00-944f-addd486f4c21
 attrs:
   uid: 3b1dd47c-1ffc-4cf3-a66f-d81ca7553830
----
-```
-
-```void
----
-type: path-table
-content:
-  - type: table
-    rows:
-      - attrs:
-          disabled: false
-          uid: 1ab2e3f7-94a5-4be6-a070-d71d285c3adc
-        row:
-          - organizationId
-          - —
-attrs:
-  uid: e5804bbc-0900-4745-a1f5-37bebcddd1bf
 ---
 ```
 

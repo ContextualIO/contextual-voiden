@@ -17,7 +17,7 @@ content:
       uid: 2565b451-a694-4dfa-9aec-91796fe1d1d5
     content: PUT
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/clients/{clientId}"
+    content: "{{AUTH_API_URL}}/clients/{clientId}"
     attrs:
       uid: ab2ac588-1708-4a11-bb0a-010ecead9178
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: 2cc702f7-ba4e-4e37-95c0-ae6f9d4ef95e
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: 329a8be5-dfeb-473e-b6ac-d2ef16b523c3

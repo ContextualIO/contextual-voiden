@@ -17,7 +17,7 @@ content:
       uid: 8de247f7-f67d-451f-b594-8ea5b023052d
     content: GET
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/client-grants/{grantId}"
+    content: "{{AUTH_API_URL}}/client-grants/{grantId}"
     attrs:
       uid: 7aaa47d0-310c-496f-a472-8a29b60ad2e7
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: 3c11e766-0cf8-4742-b128-af079f25331c
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: 3a8ac206-e4d5-4a86-bd6a-521d0d2568ae

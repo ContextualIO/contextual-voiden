@@ -17,7 +17,7 @@ content:
       uid: a9602631-e979-4b68-ab92-b7889b3afe2e
     content: GET
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/resource-servers/{resourceId}"
+    content: "{{AUTH_API_URL}}/resource-servers/{resourceId}"
     attrs:
       uid: 617d4fc9-3d2f-4ca7-b4b1-4a77aca1667f
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: 7edf4ad2-c132-466a-acaf-743fbed693e9
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: d7445074-6859-4bcb-b912-479afc3100c6

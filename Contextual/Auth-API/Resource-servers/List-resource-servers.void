@@ -17,28 +17,11 @@ content:
       uid: f7e5eab8-07f4-421a-be5d-51a2c098d94a
     content: GET
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/resource-servers"
+    content: "{{AUTH_API_URL}}/resource-servers"
     attrs:
       uid: 05f2ffac-6721-4ecd-bc5f-18ef3f8aaccf
 attrs:
   uid: 01c4119e-64dd-441a-bc13-616cdbaeb3b8
----
-```
-
-```void
----
-type: path-table
-content:
-  - type: table
-    rows:
-      - attrs:
-          disabled: false
-          uid: 9eb1baaf-96b6-4336-b3c7-ee67bfd97bef
-        row:
-          - organizationId
-          - —
-attrs:
-  uid: b49a7fba-2aa2-40ae-9840-949b235ed841
 ---
 ```
 

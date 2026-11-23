@@ -25,20 +25,3 @@ attrs:
 ---
 ```
 
-```void
----
-type: headers-table
-content:
-  - type: table
-    rows:
-      - attrs:
-          disabled: false
-          uid: 5889c35d-b1ae-47bf-b7e7-17d6db393d8c
-        row:
-          - x-org-id
-          - nasser
-attrs:
-  uid: 7b8ef58d-56e3-4c68-b07d-fd41986ccd54
----
-```
-

@@ -17,7 +17,7 @@ content:
       uid: ac3eb0b3-7ab6-44ef-afe0-06510e45a41f
     content: DELETE
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/client-grants/{grantId}"
+    content: "{{AUTH_API_URL}}/client-grants/{grantId}"
     attrs:
       uid: b468c3ad-3813-4b77-9fc5-93c93ffcf8af
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: 763e77fb-5901-489e-9141-cb076b3853c4
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: da73c665-c29d-4045-b4b1-bace2ce41b25

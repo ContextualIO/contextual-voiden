@@ -17,7 +17,7 @@ content:
       uid: a473689a-6673-47ba-b25c-58e9553413b7
     content: GET
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/clients/{clientId}"
+    content: "{{AUTH_API_URL}}/clients/{clientId}"
     attrs:
       uid: d48720a1-7b79-401f-8a6e-a39ab6c53061
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: 2101e8ce-064e-41fd-839e-abcc684cc39f
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: 4e48fc96-5e55-46fe-8921-46582851c1d5

@@ -17,7 +17,7 @@ content:
       uid: 075c9f2f-8d74-410f-86a9-7726afd0f4ca
     content: GET
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/invitations/{invitationId}"
+    content: "{{AUTH_API_URL}}/invitations/{invitationId}"
     attrs:
       uid: bf5444bf-2708-4c40-8fd8-fa8eea5cef29
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: 72311a95-f5c9-4550-9708-a69ad01d797b
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: ce3d686f-4e86-4134-bf0f-ad3fa798943a

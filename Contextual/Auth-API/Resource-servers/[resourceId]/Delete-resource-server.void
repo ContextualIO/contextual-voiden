@@ -17,7 +17,7 @@ content:
       uid: 47d4a0d6-a544-4ec6-a1a1-bd5b045ab64c
     content: DELETE
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/resource-servers/{resourceId}"
+    content: "{{AUTH_API_URL}}/resource-servers/{resourceId}"
     attrs:
       uid: 3eb9daf5-394a-493b-9546-e8dc79799986
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: d437562d-d917-4725-9307-cb6d0a18b364
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: 4116f920-836a-4ab8-914d-2ff71b0362fb

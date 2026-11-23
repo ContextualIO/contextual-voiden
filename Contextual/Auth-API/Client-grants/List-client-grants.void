@@ -17,28 +17,11 @@ content:
       uid: f42743c4-ed48-4d2e-81f7-034081511cea
     content: GET
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/client-grants"
+    content: "{{AUTH_API_URL}}/client-grants"
     attrs:
       uid: d5376458-8d25-47e7-869a-290398010d37
 attrs:
   uid: 1271dd84-1a3a-44bb-a9f5-6f63e31054de
----
-```
-
-```void
----
-type: path-table
-content:
-  - type: table
-    rows:
-      - attrs:
-          disabled: false
-          uid: 215b5821-d1bb-417f-9fc4-cdf6d8560da9
-        row:
-          - organizationId
-          - —
-attrs:
-  uid: a80d3072-2101-4b9d-8250-a4b016d97c54
 ---
 ```
 

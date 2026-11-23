@@ -64,4 +64,24 @@ content:
 ---
 ```
 
+```void
+---
+type: headers-table
+attrs:
+  uid: f14967d8-f508-4fa9-b19b-ae2a6fcf280a
+  importedFrom: ""
+  pluginId: voiden-rest-api
+  pluginVersion: 1.4.17
+content:
+  - type: table
+    rows:
+      - attrs:
+          disabled: false
+          omitIfUnresolved: false
+        row:
+          - x-org-id
+          - "{{ORG_ID}}"
+          - The organization id for request
+---
+```
 %%EMPTY_LINE%%

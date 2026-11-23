@@ -34,26 +34,7 @@ content:
   - type: url
     attrs:
       uid: 60ef866e-cf9a-4e25-b309-0e8d53355310
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/certificate-statuses"
----
-```
-```void
----
-type: path-table
-attrs:
-  uid: 347d8ad6-5905-4118-b2cb-86dec3f6433d
-  importedFrom: ""
-  pluginId: voiden-rest-api
-  pluginVersion: 1.4.17
-content:
-  - type: table
-    rows:
-      - attrs:
-          disabled: false
-          omitIfUnresolved: false
-        row:
-          - organizationId
-          - null
+    content: "{{AUTH_API_URL}}/organization/certificate-statuses"
 ---
 ```
 %%EMPTY_LINE%%

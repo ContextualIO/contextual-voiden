@@ -17,7 +17,7 @@ content:
       uid: 3a76ebe4-2108-474c-9167-779fcc9ee821
     content: DELETE
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/invitations/{invitationId}"
+    content: "{{AUTH_API_URL}}/invitations/{invitationId}"
     attrs:
       uid: f7b2f710-6557-49ce-b2e2-f63c6ac6deee
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: d710ef9b-0fd4-4e33-beea-eef74e325879
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: 4950d25e-cbee-40d0-8d12-346af964fc52

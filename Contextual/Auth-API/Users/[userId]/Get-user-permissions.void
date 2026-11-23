@@ -17,7 +17,7 @@ content:
       uid: c9b6b502-b671-4731-819c-c614cfa19294
     content: GET
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/users/{userId}/permissions"
+    content: "{{AUTH_API_URL}}/users/{userId}/permissions"
     attrs:
       uid: a7ad5b00-03e9-483f-af00-9b4e946e3022
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: 88481c61-6d6a-4225-9218-c4791d5e73ca
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: 7c819cb2-9b9a-41b4-a34e-55c3554b327b

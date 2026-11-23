@@ -17,28 +17,11 @@ content:
       uid: ba754fcc-f89d-47e8-83ba-ea1dc1e76d25
     content: POST
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/clients"
+    content: "{{AUTH_API_URL}}/clients"
     attrs:
       uid: 18a7e8ec-93b7-4f86-92cf-30526ec8926f
 attrs:
   uid: f870dde4-a73b-48be-a543-42b81936e49c
----
-```
-
-```void
----
-type: path-table
-content:
-  - type: table
-    rows:
-      - attrs:
-          disabled: false
-          uid: e5676434-dc49-48a2-93f5-a0183e4d974d
-        row:
-          - organizationId
-          - —
-attrs:
-  uid: 747c6534-1284-4936-a90b-2905a21cebfa
 ---
 ```
 

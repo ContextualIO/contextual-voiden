@@ -17,28 +17,11 @@ content:
       uid: 49f0eb36-f0c4-4043-9f84-8d51aafd117b
     content: PUT
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}"
+    content: "{{AUTH_API_URL}}/organization"
     attrs:
       uid: 5dc5926f-6175-4d38-be74-f39e12d1b63a
 attrs:
   uid: 656e2013-6bf9-440a-849d-ac325e371b5a
----
-```
-
-```void
----
-type: path-table
-content:
-  - type: table
-    rows:
-      - attrs:
-          disabled: false
-          uid: d15e546e-478d-4933-ad28-8165a31ae70f
-        row:
-          - organizationId
-          - —
-attrs:
-  uid: 8fa603df-5d65-4cd6-bde7-c4e661d2666b
 ---
 ```
 

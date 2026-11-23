@@ -17,7 +17,7 @@ content:
       uid: a9b307df-854b-4a9b-8019-f032aedcb3e7
     content: DELETE
   - type: url
-    content: "{{AUTH_API_URL}}/organizations/{organizationId}/users/{userId}"
+    content: "{{AUTH_API_URL}}/users/{userId}"
     attrs:
       uid: fde591b1-0dad-4a44-86f5-270ed07a33c9
 attrs:
@@ -31,12 +31,6 @@ type: path-table
 content:
   - type: table
     rows:
-      - attrs:
-          disabled: false
-          uid: efe9cc62-65a8-4b4a-971f-5d2711bed759
-        row:
-          - organizationId
-          - —
       - attrs:
           disabled: false
           uid: 9707c33f-56fa-44af-a776-696624d13f1d

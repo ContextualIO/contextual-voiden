@@ -96,8 +96,8 @@ The callback listens on `localhost:9090`, so make sure nothing else is using tha
 ## 5. Send a request
 
 1. In the sidebar, open a request such as `Contextual/Auth-API/Users-Current/Get-current-user.void`.
-2. **Path parameters:** folders named in square brackets (`[organizationId]`, `[clientId]`, `[id]`, `[typeId]` …) contain requests with path variables. Fill them in from the request's path-params table, where they show as `—` until you set them.
-3. **`x-org-id` header:** Native Object API requests send an `x-org-id` header, currently set to `nasser`. Change it to your own org/tenant ID before you send.
+2. **Path parameters:** folders named in square brackets (`[clientId]`, `[userId]`, `[id]`, `[typeId]` …) contain requests with path variables. Fill them in from the request's path-params table, where they show as `—` until you set them. The organization is never a path variable: it's sent in the `x-org-id` header (next step).
+3. **`x-org-id` header:** every request inherits `x-org-id: {{ORG_ID}}` from [Contextual/.voiden-inherited.void](Contextual/.voiden-inherited.void). Set `ORG_ID` to your org's ID in `.voiden/env-private.yaml` under each environment you use; orgs differ between Dev, QA and Prod. Run **Auth-API → Organizations → List-organizations** to see the orgs you can use.
 4. **Body:** `Create-*`, `Update-*`, `Query-*` and `Page-*` requests have a JSON body block. Query and page requests default to `{}`.
 5. Press **Send**.
 
@@ -129,6 +129,7 @@ A good first check is **Auth-API → Users-Current → Get-current-user**. It co
 - **Keep templates generic.** Before committing, make sure the file has no IDs, org names or bodies from a one-off test, and leave placeholders such as `—` in path params. Commit only the change you meant to make.
 - **New endpoint:** create the `.void` file in the matching API/resource folder, use the existing base-URL variables (`{{NO_API_URL}}`, `{{AUTH_API_URL}}` …) and don't hard-code hostnames.
 - **Re-import from Postman:** if the Postman collection changes, replace `Contextual.postman_collection.json` and re-import it with Voiden's Postman import. Check the diff carefully, because a re-import regenerates the `uid`s in every file.
-- **Variable names:** environment variables use `UPPER_SNAKE_CASE` (`{{NO_API_URL}}`, `{{DOMAIN_SUFFIX}}` …). Path parameters keep their single-brace API names (`{organizationId}`, `{clientId}` …).
+- **Headers are inherited, not merged:** requests get their headers (currently just `x-org-id`) from `Contextual/.voiden-inherited.void`. If you add a headers table to a request, it **replaces** the inherited one completely, so include `x-org-id: {{ORG_ID}}` in it too.
+- **Variable names:** environment variables use `UPPER_SNAKE_CASE` (`{{NO_API_URL}}`, `{{DOMAIN_SUFFIX}}` …). Path parameters keep their single-brace API names (`{clientId}`, `{userId}` …).
 - **Environments and auth:** changes to `env-public.yaml` or `Contextual/.voiden-inherited.void` affect everyone, so review them like any shared config.
 - **Secrets:** never commit tokens, client secrets or anything in `env-private.yaml`.
